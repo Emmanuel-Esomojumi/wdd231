@@ -164,21 +164,19 @@ button {
 }
 
 /* ---------- Layout wrapper ---------- */
-main>section {
+main>section,
+main>h1 {
     padding: 2.25rem 1.25rem;
     max-width: var(--max-width);
     margin-inline: auto;
 }
 
-/* ---------- Hero ---------- */
-.hero {
+main>h1 {
     padding-top: 1.75rem;
     padding-bottom: 0;
-}
-
-.hero h1 {
     font-size: clamp(2.25rem, 8vw, 3.25rem);
 }
+
 
 /* ---------- Panel component (reused for About / Photo / Certificate) ---------- */
 .panel {

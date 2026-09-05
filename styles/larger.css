@@ -42,11 +42,12 @@
         transform: scaleX(1);
     }
 
-    main>section {
+    main>section,
+    main>h1 {
         padding: 3rem 2.5rem;
     }
 
-    .hero {
+    main>h1 {
         padding-top: 2.5rem;
     }
 

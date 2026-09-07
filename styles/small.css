@@ -9,6 +9,9 @@
     --color-accent-dark: #A97B22;
     --color-muted: #6B7280;
     --color-border: #E4DFD3;
+    --color-nav-link: rgba(255, 255, 255, 0.8);
+    --shadow-card: rgba(20, 25, 43, 0.1);
+    --shadow-completed: rgba(169, 123, 34, 0.3);
 
     --font-heading: "Space Grotesk", sans-serif;
     --font-body: "Inter", sans-serif;
@@ -150,7 +153,7 @@ button {
     padding: 0.9rem 1.25rem;
     font-weight: 500;
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--color-nav-link);
     border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -159,7 +162,7 @@ button {
 }
 
 .primary-nav a[aria-current="page"] {
-    color: #fff;
+    color: var(--color-surface);
     font-weight: 700;
 }
 
@@ -190,7 +193,7 @@ main>h1 {
 
 .panel__header {
     background: var(--color-ink);
-    color: #fff;
+    color: var(--color-surface);
     font-size: 1.05rem;
     text-align: center;
     padding: 0.75rem 1rem;
@@ -198,6 +201,14 @@ main>h1 {
 
 .panel__body {
     padding: 1.1rem;
+}
+
+.panel__body p {
+    margin-bottom: 1rem;
+}
+
+.panel__body p:last-child {
+    margin-bottom: 0;
 }
 
 /* ---------- About / Photo ---------- */
@@ -251,7 +262,7 @@ main>h1 {
 .filter-btn.is-active {
     background: var(--color-primary);
     border-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-surface);
 }
 
 .course-list {
@@ -277,7 +288,7 @@ main>h1 {
 }
 
 .course-card:hover {
-    box-shadow: 0 4px 10px rgba(20, 25, 43, 0.1);
+    box-shadow: 0 4px 10px var(--shadow-card);
     border-color: var(--color-primary);
 }
 
@@ -290,7 +301,7 @@ main>h1 {
 .course-card.is-completed:hover {
     background: var(--color-accent-dark);
     border-color: var(--color-accent-dark);
-    box-shadow: 0 4px 10px rgba(169, 123, 34, 0.3);
+    box-shadow: 0 4px 10px var(--shadow-completed);
 }
 
 .course-card__code {

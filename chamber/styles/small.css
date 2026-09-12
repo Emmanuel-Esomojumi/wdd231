@@ -1,0 +1,743 @@
+/* =========================================================
+   EKO CHAMBER OF COMMERCE
+   Mobile-first design system
+   ========================================================= */
+
+:root {
+  /* ---------- Core colors ---------- */
+  --color-bg: #F7F6F3;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F0EDF7;
+
+  --color-ink: #211A33;
+  --color-ink-soft: #5F586F;
+
+  --color-primary: #382766;
+  --color-primary-dark: #24183F;
+  --color-primary-light: #59468A;
+
+  --color-accent: #F06432;
+  --color-accent-dark: #C94B22;
+  --color-accent-soft: #FCE5DB;
+
+  --color-border: #DDD8E7;
+
+  /* ---------- Membership ---------- */
+  --badge-np-bg: #ECEAF0;
+  --badge-np-text: #4D4758;
+
+  --badge-bronze-bg: #F1DFD1;
+  --badge-bronze-text: #82512D;
+
+  --badge-silver-bg: #E8E8ED;
+  --badge-silver-text: #505263;
+
+  --badge-gold-bg: #F5E7BD;
+  --badge-gold-text: #7C6017;
+
+  /* ---------- Typography ---------- */
+  --font-heading: "Fraunces", serif;
+  --font-body: "Inter", sans-serif;
+
+  /* ---------- Layout ---------- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  --max-width: 72rem;
+}
+
+
+/* =========================================================
+   RESET / BASE
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-ink);
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+address {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  color: var(--color-ink);
+  line-height: 1.15;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem 1.25rem;
+
+  background: var(--color-primary-dark);
+}
+
+
+/* ---------- Brand ---------- */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.brand__mark {
+  flex-shrink: 0;
+}
+
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brand__name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.brand__tag {
+  margin-top: 0.2rem;
+
+  color: #F49A78;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+/* ---------- Mobile menu button ---------- */
+
+.nav-toggle {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  background: transparent;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-sm);
+}
+
+.nav-toggle__bar {
+  width: 22px;
+  height: 2px;
+
+  background: #FFFFFF;
+
+  border-radius: 2px;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+
+/* =========================================================
+   NAVIGATION
+   ========================================================= */
+
+.primary-nav {
+  max-height: 0;
+
+  overflow: hidden;
+
+  border-bottom: 2px solid var(--color-accent);
+
+  background: var(--color-primary-dark);
+
+  transition: max-height 0.25s ease;
+}
+
+.primary-nav.is-open {
+  max-height: 260px;
+}
+
+.primary-nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-nav a {
+  display: block;
+
+  padding: 0.85rem 1.25rem;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.primary-nav a:hover,
+.primary-nav a[aria-current="page"] {
+  color: #FFFFFF;
+}
+
+.primary-nav a[aria-current="page"] {
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+
+/* =========================================================
+   PAGE HEADING
+   ========================================================= */
+
+.heading-band {
+  background: var(--color-primary);
+
+  padding: 2.5rem 1.25rem 2.35rem;
+
+  text-align: center;
+}
+
+.heading-band__inner {
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.heading-band h1 {
+  color: #FFFFFF;
+
+  font-size: clamp(2rem, 8vw, 2.8rem);
+
+  letter-spacing: -0.02em;
+}
+
+.heading-band .page-heading__subtitle {
+  margin-top: 0.5rem;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   GENERAL CONTENT
+   ========================================================= */
+
+main > section,
+main > .panel {
+  max-width: var(--max-width);
+
+  margin-inline: auto;
+
+  padding: 2.5rem 1.25rem;
+}
+
+.page-heading__subtitle {
+  margin-top: 0.4rem;
+
+  color: var(--color-ink-soft);
+
+  font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   DIRECTORY CONTROLS
+   ========================================================= */
+
+.directory__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+
+  flex-wrap: wrap;
+
+  margin: 0 0 1.75rem;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  min-width: 78px;
+
+  padding: 0.6rem 0.9rem;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+
+  background: var(--color-surface);
+  color: var(--color-ink);
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.view-btn:hover {
+  border-color: var(--color-primary);
+}
+
+.view-btn.is-active {
+  background: var(--color-primary);
+
+  border-color: var(--color-primary);
+
+  color: #FFFFFF;
+}
+
+.directory__count {
+  color: var(--color-ink-soft);
+
+  font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   DIRECTORY GRID
+   ========================================================= */
+
+.directory-list {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 1.5rem;
+}
+
+
+/* =========================================================
+   MEMBER CARD
+   ========================================================= */
+
+.member-card {
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background: var(--color-surface);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.member-card:hover {
+  border-color: #C9C0DA;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 24px rgba(36, 24, 63, 0.08);
+}
+
+
+/* =========================================================
+   BUSINESS LOGO
+   ========================================================= */
+
+.member-card__logo {
+  min-height: 130px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 1.25rem;
+
+  background: var(--color-surface-soft);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.member-card__logo img {
+  width: min(100%, 180px);
+  height: 90px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   CARD BODY
+   ========================================================= */
+
+.member-card__body {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0;
+
+  padding: 1.35rem 1.3rem 1.4rem;
+}
+
+
+/* ---------- Category ---------- */
+
+.member-card__category {
+  margin-bottom: 0.45rem;
+
+  color: var(--color-primary-light);
+
+  font-size: 0.65rem;
+  font-weight: 700;
+
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+
+/* ---------- Business name ---------- */
+
+.member-card__name {
+  margin: 0;
+
+  color: var(--color-primary);
+
+  font-family: var(--font-heading);
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+
+/* ---------- Tagline ---------- */
+
+.member-card__tagline {
+  margin-top: 0.4rem;
+
+  color: var(--color-ink-soft);
+
+  font-size: 0.84rem;
+
+  line-height: 1.5;
+}
+
+
+/* ---------- Description ---------- */
+
+.member-card__description {
+  margin-top: 1rem;
+
+  color: var(--color-ink);
+
+  font-size: 0.82rem;
+
+  line-height: 1.6;
+
+  max-width: 42ch;
+
+  display: -webkit-box;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  line-clamp: 3;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   MEMBER DETAILS / CONTACT
+   ========================================================= */
+
+.member-card__details {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.4rem;
+
+  margin-top: 1.2rem;
+
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--color-border);
+
+  font-size: 0.78rem;
+}
+
+.member-card__details strong {
+  color: var(--color-ink);
+
+  font-weight: 600;
+}
+
+.member-card__details a {
+  color: var(--color-primary);
+
+  font-weight: 600;
+}
+
+.member-card__details a:hover {
+  color: var(--color-accent-dark);
+
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   MEMBERSHIP BADGE
+   ========================================================= */
+
+.member-card__footer {
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: auto;
+
+  padding-top: 1rem;
+}
+
+.badge {
+  display: inline-block;
+
+  padding: 0.3rem 0.65rem;
+
+  border-radius: 999px;
+
+  font-size: 0.64rem;
+  font-weight: 700;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+.badge-np {
+  background: var(--badge-np-bg);
+  color: var(--badge-np-text);
+}
+
+.badge-bronze {
+  background: var(--badge-bronze-bg);
+  color: var(--badge-bronze-text);
+}
+
+.badge-silver {
+  background: var(--badge-silver-bg);
+  color: var(--badge-silver-text);
+}
+
+.badge-gold {
+  background: var(--badge-gold-bg);
+  color: var(--badge-gold-text);
+}
+
+
+/* =========================================================
+   LIST VIEW
+   ========================================================= */
+
+.directory-list.is-list-view {
+  grid-template-columns: 1fr;
+
+  gap: 0.75rem;
+}
+
+.directory-list.is-list-view .member-card {
+  flex-direction: row;
+
+  align-items: center;
+}
+
+.directory-list.is-list-view .member-card__logo {
+  display: none;
+}
+
+.directory-list.is-list-view .member-card__body {
+  flex-direction: row;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 0.5rem 1.5rem;
+
+  padding: 1rem 1.25rem;
+}
+
+.directory-list.is-list-view .member-card__category,
+.directory-list.is-list-view .member-card__tagline,
+.directory-list.is-list-view .member-card__description {
+  display: none;
+}
+
+.directory-list.is-list-view .member-card__details {
+  flex-direction: row;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 0.4rem 1.25rem;
+
+  margin-top: 0;
+
+  padding-top: 0;
+
+  border-top: none;
+}
+
+.directory-list.is-list-view .member-card__footer {
+  margin-top: 0;
+
+  padding-top: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1.25rem;
+
+  padding: 2.5rem 1.25rem;
+
+  background: var(--color-primary-dark);
+
+  border-top: 2px solid var(--color-accent);
+
+  text-align: center;
+}
+
+.footer__contact address {
+  color: rgba(255, 255, 255, 0.68);
+
+  font-size: 0.8rem;
+
+  line-height: 1.7;
+}
+
+.footer__contact address strong {
+  display: block;
+
+  margin-bottom: 0.25rem;
+
+  color: #FFFFFF;
+
+  font-family: var(--font-heading);
+
+  font-size: 1.05rem;
+}
+
+.footer__socials {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.footer__socials a {
+  color: rgba(255, 255, 255, 0.72);
+
+  transition: color 0.15s ease;
+}
+
+.footer__socials a:hover {
+  color: var(--color-accent);
+}
+
+.footer__dev {
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 0.75rem;
+
+  line-height: 1.7;
+}
+
+

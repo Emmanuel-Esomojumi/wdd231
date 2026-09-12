@@ -1,0 +1,187 @@
+/* =========================================================
+   TABLET / DESKTOP
+   ========================================================= */
+
+@media (min-width: 700px) {
+
+  /* ---------- Header ---------- */
+
+  .site-header {
+    padding: 1.15rem 2.5rem;
+  }
+
+  .brand__name {
+    font-size: 1.15rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+
+  /* ---------- Navigation ---------- */
+
+  .primary-nav {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .primary-nav ul {
+    max-width: var(--max-width);
+    margin-inline: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .primary-nav a {
+    position: relative;
+
+    padding: 0.85rem 1.5rem;
+
+    border-top: none;
+  }
+
+  .primary-nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom: 0.35rem;
+
+    height: 2px;
+
+    background: var(--color-accent);
+
+    transform: scaleX(0);
+    transform-origin: center;
+
+    transition: transform 0.2s ease;
+  }
+
+  .primary-nav a:hover::after,
+  .primary-nav a[aria-current="page"]::after {
+    transform: scaleX(1);
+  }
+
+  .primary-nav a[aria-current="page"] {
+    background: transparent;
+  }
+
+
+  /* ---------- Heading ---------- */
+
+  .heading-band {
+    padding: 3.25rem 2.5rem 3rem;
+  }
+
+  .heading-band h1 {
+    font-size: clamp(2.5rem, 4vw, 3.25rem);
+  }
+
+  .heading-band .page-heading__subtitle {
+    font-size: 1rem;
+  }
+
+
+  /* ---------- Main content ---------- */
+
+  main > section,
+  main > .panel {
+    padding: 3rem 2.5rem;
+  }
+
+
+  /* ---------- Directory ---------- */
+
+  .directory-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  .member-card__logo {
+    min-height: 140px;
+    padding: 1.5rem;
+  }
+
+  .member-card__body {
+    padding: 1.45rem 1.4rem 1.5rem;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  .site-footer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 2.75rem 2.5rem;
+
+    text-align: left;
+  }
+
+  .footer__contact address {
+    text-align: left;
+  }
+}
+
+
+/* =========================================================
+   DESKTOP
+   ========================================================= */
+
+@media (min-width: 1000px) {
+
+  .directory-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.75rem;
+  }
+
+  .member-card__logo {
+    min-height: 145px;
+    padding: 1.5rem;
+  }
+
+  .member-card__body {
+    padding: 1.5rem 1.5rem 1.55rem;
+  }
+
+  .member-card__name {
+    font-size: 1.25rem;
+  }
+
+  .member-card__description {
+    font-size: 0.83rem;
+  }
+
+  .site-footer {
+    padding-inline: max(
+      2.5rem,
+      calc((100% - var(--max-width)) / 2)
+    );
+  }
+}
+
+
+/* =========================================================
+   VERY WIDE SCREEN
+   ========================================================= */
+
+@media (min-width: 1200px) {
+
+  .heading-band {
+    padding-top: 3.75rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .directory-list {
+    gap: 2rem;
+  }
+
+  .member-card__body {
+    padding: 1.6rem 1.6rem 1.65rem;
+  }
+}

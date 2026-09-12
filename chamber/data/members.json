@@ -1,0 +1,148 @@
+{
+  "companies": [
+    {
+      "name": "Kora Digital Studio",
+      "category": "Technology & Digital",
+      "tagline": "Web and product design for growing brands",
+      "address": "14 Herbert Macaulay Way, Yaba, Lagos",
+      "phone": "+234 802 314 5521",
+      "email": "hello@koradigital.com",
+      "website": "https://koradigital.com",
+      "image": "images/kora-digital-studio.webp",
+      "membership": "gold",
+      "description": "A digital product studio building websites, apps, and brand systems for startups and small businesses."
+    },
+    {
+      "name": "Palmhouse Creative",
+      "category": "Creative & Media",
+      "tagline": "Photography, film, and brand storytelling",
+      "address": "22 Allen Avenue, Ikeja, Lagos",
+      "phone": "+234 803 776 2290",
+      "email": "studio@palmhousecreative.com",
+      "website": "https://palmhousecreative.com",
+      "image": "images/palmhouse-creative.webp",
+      "membership": "silver",
+      "description": "A creative agency producing photography, film, and campaign content for local and regional brands."
+    },
+    {
+      "name": "HarborPoint Properties",
+      "category": "Real Estate",
+      "tagline": "Residential and commercial property advisory",
+      "address": "9 Admiralty Way, Lekki Phase 1, Lagos",
+      "phone": "+234 805 441 0087",
+      "email": "info@harborpointproperties.com",
+      "website": "https://harborpointproperties.com",
+      "image": "images/harborpoint-properties.webp",
+      "membership": "gold",
+      "description": "A property advisory firm handling sales, leasing, and development consulting across Lagos."
+    },
+    {
+      "name": "Cedar & Coast Realty",
+      "category": "Real Estate",
+      "tagline": "Premium real estate on the island",
+      "address": "45 Ozumba Mbadiwe Avenue, Victoria Island, Lagos",
+      "phone": "+234 701 220 6634",
+      "email": "contact@cedarcoastrealty.com",
+      "website": "https://cedarcoastrealty.com",
+      "image": "images/cedar-and-coast-realty.webp",
+      "membership": "silver",
+      "description": "A boutique realty firm specializing in premium residential listings across Victoria Island and Lekki."
+    },
+    {
+      "name": "Balogun Trade House",
+      "category": "Wholesale & Commerce",
+      "tagline": "A united voice for Balogun Market traders",
+      "address": "Balogun Market, Lagos Island, Lagos",
+      "phone": "+234 802 555 0198",
+      "email": "contact@baloguntraders.org",
+      "website": "https://baloguntradehouse.org",
+      "image": "images/balogun-trade-house.webp",
+      "membership": "np",
+      "description": "A non-profit trade association representing wholesale and retail traders in Balogun Market."
+    },
+    {
+      "name": "MarketSquare Superstores",
+      "category": "Retail & Supermarket",
+      "tagline": "Everyday groceries, always in stock",
+      "address": "18 Bode Thomas Street, Surulere, Lagos",
+      "phone": "+234 809 213 4471",
+      "email": "support@marketsquare.ng",
+      "website": "https://marketsquare.ng",
+      "image": "images/marketsquare-superstores.webp",
+      "membership": "gold",
+      "description": "A neighborhood supermarket chain offering groceries, household goods, and fresh produce."
+    },
+    {
+      "name": "Mainland Harvest Foods",
+      "category": "Food & Grocery",
+      "tagline": "Fresh produce sourced directly from farmers",
+      "address": "6 Awolowo Way, Ikeja, Lagos",
+      "phone": "+234 706 890 1123",
+      "email": "info@mainlandharvest.org",
+      "website": "https://mainlandharvest.org",
+      "image": "images/mainland-harvest-foods.webp",
+      "membership": "np",
+      "description": "A farmer-to-market cooperative supplying fresh produce to households and local vendors across Lagos."
+    },
+    {
+      "name": "The Copper Pot",
+      "category": "Restaurant & Hospitality",
+      "tagline": "Modern Nigerian dining on the island",
+      "address": "3 Karimu Kotun Street, Victoria Island, Lagos",
+      "phone": "+234 810 334 5590",
+      "email": "reservations@thecopperpot.ng",
+      "website": "https://thecopperpot.ng",
+      "image": "images/the-copper-pot.webp",
+      "membership": "bronze",
+      "description": "A modern restaurant reimagining classic Nigerian dishes with contemporary presentation."
+    },
+    {
+      "name": "Aso & Avenue",
+      "category": "Fashion & Lifestyle",
+      "tagline": "Contemporary Nigerian fashion, made local",
+      "address": "12 Adeola Odeku Street, Lekki, Lagos",
+      "phone": "+234 815 662 7734",
+      "email": "shop@asoandavenue.com",
+      "website": "https://asoandavenue.com",
+      "image": "images/aso-and-avenue.webp",
+      "membership": "bronze",
+      "description": "A fashion label blending traditional Nigerian textiles with contemporary silhouettes."
+    },
+    {
+      "name": "GlowHaus Wellness",
+      "category": "Beauty & Wellness",
+      "tagline": "Skincare and wellness, done right",
+      "address": "27 Addo Road, Ajah, Lagos",
+      "phone": "+234 813 004 2298",
+      "email": "hello@glowhauswellness.com",
+      "website": "https://glowhauswellness.com",
+      "image": "images/glowhaus-wellness.webp",
+      "membership": "bronze",
+      "description": "A wellness studio offering skincare treatments, spa services, and personal care products."
+    },
+    {
+      "name": "SwiftBridge Logistics",
+      "category": "Logistics & Transportation",
+      "tagline": "Same-day delivery across Lagos",
+      "address": "5 Apapa-Oshodi Expressway, Apapa, Lagos",
+      "phone": "+234 802 991 4456",
+      "email": "dispatch@swiftbridgelogistics.com",
+      "website": "https://swiftbridgelogistics.com",
+      "image": "images/swiftbridge-logistics.webp",
+      "membership": "silver",
+      "description": "A logistics company providing same-day courier, freight, and warehousing services."
+    },
+    {
+      "name": "Bridgepoint Business Advisory",
+      "category": "Professional Services",
+      "tagline": "Accounting and strategy for growing SMEs",
+      "address": "31 Marina, Lagos Island, Lagos",
+      "phone": "+234 807 556 3312",
+      "email": "advisory@bridgepointng.com",
+      "website": "https://bridgepointng.com",
+      "image": "images/bridgepoint-business-advisory.webp",
+      "membership": "gold",
+      "description": "An advisory firm offering accounting, tax, and growth strategy services for small and mid-sized businesses."
+    }
+  ]
+}

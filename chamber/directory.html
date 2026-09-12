@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Directory | Eko Chamber of Commerce</title>
+  <meta name="description"
+    content="Browse member businesses of the Eko Chamber of Commerce, connecting businesses across Lagos, Nigeria.">
+  <meta name="author" content="Emmanuel Esomojumi">
+
+  <meta property="og:title" content="Business Directory | Eko Chamber of Commerce">
+  <meta property="og:description"
+    content="Browse member businesses of the Eko Chamber of Commerce, connecting businesses across Lagos, Nigeria.">
+  <meta property="og:image" content="https://emmanuel-esomojumi.github.io/wdd231/chamber/images/logo.svg">
+  <meta property="og:url" content="https://emmanuel-esomojumi.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <div class="site-topbar">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <img src="images/business-logo.webp" alt="" class="brand__mark" width="44" height="44">
+        <span class="brand__text">
+          <span class="brand__name">Eko Chamber of Commerce</span>
+          <span class="brand__tag">Connecting businesses across Lagos</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav"
+        aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </header>
+
+    <nav class="primary-nav" id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" aria-current="page">Business Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <div class="heading-band">
+      <div class="heading-band__inner">
+        <h1>Business Directory</h1>
+        <p class="page-heading__subtitle">Connecting businesses across Lagos.</p>
+      </div>
+    </div>
+
+    <section class="directory-content">
+      <div class="directory__controls">
+        <div class="view-toggle" role="group" aria-label="Choose directory view">
+          <button class="view-btn is-active" id="gridViewBtn" type="button" aria-pressed="true">Grid</button>
+          <button class="view-btn" id="listViewBtn" type="button" aria-pressed="false">List</button>
+        </div>
+        <p class="directory__count" id="directoryCount"></p>
+      </div>
+
+      <ul class="directory-list" id="directoryList" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer__contact">
+      <address>
+        <strong>Eko Chamber of Commerce</strong>
+        14 Balogun Street<br>
+        Lagos Island, Lagos, Nigeria<br>
+        info@ekochamber.org.ng<br>
+        +234 1 555 0100
+      </address>
+    </div>
+
+    <div class="footer__socials">
+      <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path fill="currentColor"
+            d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z" />
+        </svg>
+      </a>
+      <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor"
+            d="M18.24 2.75h3.29l-7.19 8.22 8.46 10.28h-6.63l-5.19-6.7-5.94 6.7H1.75l7.7-8.8L1.35 2.75h6.8l4.7 6.13 5.39-6.13Zm-1.16 16.62h1.82L7.02 4.53H5.06l12.02 14.84Z" />
+        </svg>
+      </a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor"
+            d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="footer__dev">
+      <p>WDD231 Class Project</p>
+      <p>Emmanuel Esomojumi</p>
+      <p>&copy; <span id="currentyear"></span> Eko Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -382,6 +382,7 @@ main > .panel {
 
 .directory-list {
   display: grid;
+  min-height: 600px;
 
   grid-template-columns: 1fr;
 

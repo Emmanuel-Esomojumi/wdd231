@@ -304,7 +304,7 @@ h3 {
   max-width: none;
   margin-inline: 0;
   padding: 0;
-  height: clamp(280px, 45vw, 480px);
+  height: clamp(260px, 40vw, 420px);
 }
 
 .hero__image {

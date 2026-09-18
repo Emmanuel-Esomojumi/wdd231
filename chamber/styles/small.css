@@ -293,13 +293,83 @@ h3 {
   font-size: 0.95rem;
 }
 
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+  padding: 0;
+  height: clamp(280px, 45vw, 480px);
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(36, 24, 63, 0.15), rgba(36, 24, 63, 0.78));
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero__content {
+  padding: 1.5rem 1.25rem 2rem;
+  color: #fff;
+  max-width: 40rem;
+}
+
+.hero__eyebrow {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.hero h1 {
+  color: #fff;
+  font-size: clamp(1.8rem, 7vw, 2.6rem);
+  margin-bottom: 0.6rem;
+}
+
+.hero__content p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  max-width: 34ch;
+}
+
+.button {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.button:hover {
+  background: var(--color-accent-dark);
+}
+
 
 /* =========================================================
    GENERAL CONTENT
    ========================================================= */
 
-main > section,
-main > .panel {
+main>section,
+main>.panel {
   max-width: var(--max-width);
 
   margin-inline: auto;
@@ -740,4 +810,169 @@ main > .panel {
   line-height: 1.7;
 }
 
+/* =========================================================
+   CURRENT EVENTS
+   ========================================================= */
 
+.events h2,
+.weather h2,
+.spotlights h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.events__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.event-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 1.25rem;
+}
+
+.event-card__date {
+  display: inline-block;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  margin-bottom: 0.6rem;
+}
+
+.event-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+}
+
+.event-card p:last-child {
+  color: var(--color-ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   WEATHER
+   ========================================================= */
+
+.weather__current {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.weather__icon {
+  flex-shrink: 0;
+}
+
+.weather__temp {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.weather__desc {
+  color: var(--color-ink-soft);
+  font-size: 0.9rem;
+}
+
+.weather__forecast {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.weather__forecast-day {
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 0.5rem;
+  text-align: center;
+}
+
+.weather__forecast-label {
+  font-size: 0.78rem;
+  color: var(--color-ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.3rem;
+}
+
+.weather__forecast-temp {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+
+/* =========================================================
+   MEMBER SPOTLIGHTS
+   ========================================================= */
+
+.spotlight-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.spotlight-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.1rem;
+}
+
+.spotlight-card__logo {
+  flex-shrink: 0;
+  width: 80px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-soft);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem;
+}
+
+.spotlight-card__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.spotlight-card__name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+}
+
+.spotlight-card__detail {
+  font-size: 0.8rem;
+  color: var(--color-ink-soft);
+}
+
+.spotlight-card__detail a {
+  color: var(--color-primary);
+}
+
+.spotlight-card .badge {
+  margin-top: 0.4rem;
+  display: inline-block;
+}

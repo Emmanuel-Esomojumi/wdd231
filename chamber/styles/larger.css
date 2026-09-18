@@ -70,6 +70,11 @@
     background: transparent;
   }
 
+    /* ---------- Hero ---------- */
+
+  .hero__content {
+    padding: 2.5rem;
+  }
 
   /* ---------- Heading ---------- */
 
@@ -110,6 +115,19 @@
     padding: 1.45rem 1.4rem 1.5rem;
   }
 
+    /* ---------- Events / Spotlights ---------- */
+
+  .events__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .spotlight-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .spotlight-card {
+    align-items: flex-start;
+  }
 
   /* ---------- Footer ---------- */
 

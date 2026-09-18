@@ -318,9 +318,15 @@ h3 {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(36, 24, 63, 0.15), rgba(36, 24, 63, 0.78));
+
   display: flex;
   align-items: flex-end;
+
+  background: linear-gradient(90deg,
+      rgba(36, 24, 63, 0.92) 0%,
+      rgba(36, 24, 63, 0.72) 42%,
+      rgba(36, 24, 63, 0.25) 75%,
+      rgba(36, 24, 63, 0.05) 100%);
 }
 
 .hero__content {

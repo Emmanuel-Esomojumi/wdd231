@@ -18,6 +18,7 @@
 
   --color-accent: #F06432;
   --color-accent-dark: #C94B22;
+  --color-accent-strong: #8A3517;
   --color-accent-soft: #FCE5DB;
 
   --color-border: #DDD8E7;
@@ -351,7 +352,7 @@ h3 {
 
 .button {
   display: inline-block;
-  background: var(--color-accent);
+  background: var(--color-accent-dark);
   color: #fff;
   font-weight: 700;
   padding: 0.75rem 1.4rem;
@@ -837,7 +838,7 @@ main>.panel {
 .event-card__date {
   display: inline-block;
   background: var(--color-accent-soft);
-  color: var(--color-accent-dark);
+  color: var(--color-accent-strong);
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.04em;

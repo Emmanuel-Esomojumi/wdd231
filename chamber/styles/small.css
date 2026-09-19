@@ -132,7 +132,10 @@ h3 {
 }
 
 .brand__mark {
+  width: 52px;
+  height: auto;
   flex-shrink: 0;
+  display: block;
 }
 
 .brand__text {
@@ -305,7 +308,7 @@ h3 {
   max-width: none;
   margin-inline: 0;
   padding: 0;
-  height: clamp(260px, 40vw, 420px);
+ height: clamp(300px, 44vw, 460px);
 }
 
 .hero__image {
@@ -320,18 +323,20 @@ h3 {
   inset: 0;
   display: flex;
   align-items: flex-end;
-  background-color: var(--color-primary-dark);
-  background: linear-gradient(90deg,
-      rgba(36, 24, 63, 0.92) 0%,
-      rgba(36, 24, 63, 0.72) 42%,
-      rgba(36, 24, 63, 0.25) 75%,
-      rgba(36, 24, 63, 0.05) 100%);
+  background-image: linear-gradient(90deg,
+      rgba(36, 24, 63, 0.95) 0%,
+      rgba(36, 24, 63, 0.88) 40%,
+      rgba(36, 24, 63, 0.55) 65%,
+      rgba(36, 24, 63, 0.15) 100%);
 }
 
 .hero__content {
+  display: flex;
   padding: 1.5rem 1.25rem 2rem;
   color: #fff;
   max-width: 40rem;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .hero__eyebrow {
@@ -346,6 +351,7 @@ h3 {
 .hero h1 {
   color: #fff;
   font-size: clamp(1.8rem, 7vw, 2.6rem);
+  line-height: 1.5;
   margin-bottom: 0.6rem;
 }
 
@@ -353,6 +359,17 @@ h3 {
   font-size: 0.95rem;
   margin-bottom: 1rem;
   max-width: 34ch;
+}
+
+.hero__eyebrow,
+.hero h1,
+.hero__content p {
+  display: inline-block;
+  background-color: var(--color-primary-dark);
+  padding: 0.15em 0.5em;
+  border-radius: var(--radius-sm);
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 
 .button {
@@ -368,7 +385,6 @@ h3 {
 .button:hover {
   background: var(--color-accent-dark);
 }
-
 
 /* =========================================================
    GENERAL CONTENT

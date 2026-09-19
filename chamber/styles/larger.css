@@ -10,6 +10,11 @@
     padding: 1.15rem 2.5rem;
   }
 
+  .brand__mark {
+    width: 64px;
+    height: auto;
+  }
+
   .brand__name {
     font-size: 1.15rem;
   }

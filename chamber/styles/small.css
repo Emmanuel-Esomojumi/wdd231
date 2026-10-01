@@ -5,36 +5,8 @@
 
 :root {
   /* ---------- Core colors ---------- */
-  --color-bg: #F7F6F3;
-  --color-surface: #FFFFFF;
-  --color-surface-soft: #F0EDF7;
-
-  --color-ink: #211A33;
-  --color-ink-soft: #5F586F;
-
-  --color-primary: #382766;
-  --color-primary-dark: #24183F;
-  --color-primary-light: #59468A;
-
-  --color-accent: #B83A00;
-  --color-accent-dark: #C94B22;
-  --color-accent-strong: #8A3517;
-  --color-accent-soft: #FCE5DB;
-
-  --color-border: #DDD8E7;
 
   /* ---------- Membership ---------- */
-  --badge-np-bg: #ECEAF0;
-  --badge-np-text: #4D4758;
-
-  --badge-bronze-bg: #F1DFD1;
-  --badge-bronze-text: #82512D;
-
-  --badge-silver-bg: #E8E8ED;
-  --badge-silver-text: #505263;
-
-  --badge-gold-bg: #F5E7BD;
-  --badge-gold-text: #7C6017;
 
   /* ---------- Typography ---------- */
   --font-heading: "Fraunces", serif;
@@ -47,7 +19,6 @@
 
   --max-width: 72rem;
 }
-
 
 /* =========================================================
    RESET / BASE
@@ -65,8 +36,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: var(--color-bg);
-  color: var(--color-ink);
+  background: #f7f6f3;
+  color: #211a33;
   line-height: 1.55;
   overflow-x: hidden;
 }
@@ -77,7 +48,7 @@ img {
 }
 
 a {
-  color: var(--color-primary);
+  color: #382766;
   text-decoration: none;
 }
 
@@ -98,15 +69,14 @@ h1,
 h2,
 h3 {
   font-family: var(--font-heading);
-  color: var(--color-ink);
+  color: #211a33;
   line-height: 1.15;
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid #b83a00;
   outline-offset: 3px;
 }
-
 
 /* =========================================================
    HEADER
@@ -119,9 +89,8 @@ h3 {
   gap: 1rem;
   padding: 1rem 1.25rem;
 
-  background: var(--color-primary-dark);
+  background: #24183f;
 }
-
 
 /* ---------- Brand ---------- */
 
@@ -149,13 +118,13 @@ h3 {
   font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .brand__tag {
   margin-top: 0.2rem;
 
-  color: #F49A78;
+  color: #f49a78;
 
   font-size: 0.65rem;
   font-weight: 700;
@@ -170,7 +139,6 @@ h3 {
   z-index: 100;
 }
 
-
 /* ---------- Mobile menu button ---------- */
 
 .nav-toggle {
@@ -184,9 +152,9 @@ h3 {
 
   gap: 5px;
 
-  background: transparent;
+  background: #00000000;
 
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid #ffffff2e;
   border-radius: var(--radius-sm);
 }
 
@@ -194,7 +162,7 @@ h3 {
   width: 22px;
   height: 2px;
 
-  background: #FFFFFF;
+  background: #ffffff;
 
   border-radius: 2px;
 
@@ -215,7 +183,6 @@ h3 {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-
 /* =========================================================
    NAVIGATION
    ========================================================= */
@@ -225,9 +192,9 @@ h3 {
 
   overflow: hidden;
 
-  border-bottom: 2px solid var(--color-accent);
+  border-bottom: 2px solid #b83a00;
 
-  background: var(--color-primary-dark);
+  background: #24183f;
 
   transition: max-height 0.25s ease;
 }
@@ -246,31 +213,30 @@ h3 {
 
   padding: 0.85rem 1.25rem;
 
-  color: rgba(255, 255, 255, 0.78);
+  color: #ffffffc7;
 
   font-size: 0.9rem;
   font-weight: 500;
 
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid #ffffff14;
 }
 
 .primary-nav a:hover,
 .primary-nav a[aria-current="page"] {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .primary-nav a[aria-current="page"] {
   font-weight: 700;
-  background: rgba(255, 255, 255, 0.06);
+  background: #ffffff0f;
 }
-
 
 /* =========================================================
    PAGE HEADING
    ========================================================= */
 
 .heading-band {
-  background: var(--color-primary);
+  background: #382766;
 
   padding: 2.5rem 1.25rem 2.35rem;
 
@@ -283,7 +249,7 @@ h3 {
 }
 
 .heading-band h1 {
-  color: #FFFFFF;
+  color: #ffffff;
 
   font-size: clamp(2rem, 8vw, 2.8rem);
 
@@ -293,7 +259,7 @@ h3 {
 .heading-band .page-heading__subtitle {
   margin-top: 0.5rem;
 
-  color: rgba(255, 255, 255, 0.82);
+  color: #ffffffd1;
 
   font-size: 0.95rem;
 }
@@ -325,16 +291,16 @@ h3 {
   display: flex;
   align-items: flex-end;
   background-image: linear-gradient(90deg,
-      rgba(36, 24, 63, 0.95) 0%,
-      rgba(36, 24, 63, 0.88) 40%,
-      rgba(36, 24, 63, 0.55) 65%,
-      rgba(36, 24, 63, 0.15) 100%);
+      #24183ff2 0%,
+      #24183fe0 40%,
+      #24183f8c 65%,
+      #24183f26 100%);
 }
 
 .hero__content {
   display: flex;
   padding: 1.5rem 1.25rem 2rem;
-  color: #fff;
+  color: #ffffff;
   max-width: 40rem;
   align-items: flex-start;
   flex-direction: column;
@@ -345,12 +311,12 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: #b83a00;
   margin-bottom: 0.5rem;
 }
 
 .hero h1 {
-  color: #fff;
+  color: #ffffff;
   font-size: clamp(1.8rem, 7vw, 2.6rem);
   line-height: 1.5;
   margin-bottom: 0.6rem;
@@ -366,7 +332,7 @@ h3 {
 .hero h1,
 .hero__content p {
   display: inline-block;
-  background-color: var(--color-primary-dark);
+  background-color: #24183f;
   padding: 0.15em 0.5em;
   border-radius: var(--radius-sm);
   box-decoration-break: clone;
@@ -375,8 +341,8 @@ h3 {
 
 .button {
   display: inline-block;
-  background: var(--color-accent-dark);
-  color: #fff;
+  background: #c94b22;
+  color: #ffffff;
   font-weight: 700;
   padding: 0.75rem 1.4rem;
   border-radius: var(--radius-sm);
@@ -384,7 +350,7 @@ h3 {
 }
 
 .button:hover {
-  background: var(--color-accent-dark);
+  background: #c94b22;
 }
 
 /* =========================================================
@@ -403,11 +369,10 @@ main>.panel {
 .page-heading__subtitle {
   margin-top: 0.4rem;
 
-  color: var(--color-ink-soft);
+  color: #5f586f;
 
   font-size: 0.95rem;
 }
-
 
 /* =========================================================
    DIRECTORY CONTROLS
@@ -435,11 +400,11 @@ main>.panel {
 
   padding: 0.6rem 0.9rem;
 
-  border: 1px solid var(--color-border);
+  border: 1px solid #ddd8e7;
   border-radius: var(--radius-sm);
 
-  background: var(--color-surface);
-  color: var(--color-ink);
+  background: #ffffff;
+  color: #211a33;
 
   font-size: 0.82rem;
   font-weight: 600;
@@ -451,23 +416,22 @@ main>.panel {
 }
 
 .view-btn:hover {
-  border-color: var(--color-primary);
+  border-color: #382766;
 }
 
 .view-btn.is-active {
-  background: var(--color-primary);
+  background: #382766;
 
-  border-color: var(--color-primary);
+  border-color: #382766;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .directory__count {
-  color: var(--color-ink-soft);
+  color: #5f586f;
 
   font-size: 0.8rem;
 }
-
 
 /* =========================================================
    DIRECTORY GRID
@@ -482,7 +446,6 @@ main>.panel {
   gap: 1.5rem;
 }
 
-
 /* =========================================================
    MEMBER CARD
    ========================================================= */
@@ -493,9 +456,9 @@ main>.panel {
 
   overflow: hidden;
 
-  background: var(--color-surface);
+  background: #ffffff;
 
-  border: 1px solid var(--color-border);
+  border: 1px solid #ddd8e7;
   border-radius: var(--radius-md);
 
   transition:
@@ -505,13 +468,12 @@ main>.panel {
 }
 
 .member-card:hover {
-  border-color: #C9C0DA;
+  border-color: #c9c0da;
 
   transform: translateY(-2px);
 
-  box-shadow: 0 8px 24px rgba(36, 24, 63, 0.08);
+  box-shadow: 0 8px 24px #24183f14;
 }
-
 
 /* =========================================================
    BUSINESS LOGO
@@ -525,9 +487,9 @@ main>.panel {
 
   padding: 1.25rem;
 
-  background: var(--color-surface-soft);
+  background: #f0edf7;
 
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid #ddd8e7;
 }
 
 .member-card__logo img {
@@ -536,7 +498,6 @@ main>.panel {
 
   object-fit: contain;
 }
-
 
 /* =========================================================
    CARD BODY
@@ -553,13 +514,12 @@ main>.panel {
   padding: 1.35rem 1.3rem 1.4rem;
 }
 
-
 /* ---------- Category ---------- */
 
 .member-card__category {
   margin-bottom: 0.45rem;
 
-  color: var(--color-primary-light);
+  color: #59468a;
 
   font-size: 0.65rem;
   font-weight: 700;
@@ -568,13 +528,12 @@ main>.panel {
   text-transform: uppercase;
 }
 
-
 /* ---------- Business name ---------- */
 
 .member-card__name {
   margin: 0;
 
-  color: var(--color-primary);
+  color: #382766;
 
   font-family: var(--font-heading);
 
@@ -584,26 +543,24 @@ main>.panel {
   line-height: 1.2;
 }
 
-
 /* ---------- Tagline ---------- */
 
 .member-card__tagline {
   margin-top: 0.4rem;
 
-  color: var(--color-ink-soft);
+  color: #5f586f;
 
   font-size: 0.84rem;
 
   line-height: 1.5;
 }
 
-
 /* ---------- Description ---------- */
 
 .member-card__description {
   margin-top: 1rem;
 
-  color: var(--color-ink);
+  color: #211a33;
 
   font-size: 0.82rem;
 
@@ -616,10 +573,8 @@ main>.panel {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 
-
   overflow: hidden;
 }
-
 
 /* =========================================================
    MEMBER DETAILS / CONTACT
@@ -635,29 +590,28 @@ main>.panel {
 
   padding-top: 1rem;
 
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid #ddd8e7;
 
   font-size: 0.78rem;
 }
 
 .member-card__details strong {
-  color: var(--color-ink);
+  color: #211a33;
 
   font-weight: 600;
 }
 
 .member-card__details a {
-  color: var(--color-primary);
+  color: #382766;
 
   font-weight: 600;
 }
 
 .member-card__details a:hover {
-  color: var(--color-accent-dark);
+  color: #c94b22;
 
   text-decoration: underline;
 }
-
 
 /* =========================================================
    MEMBERSHIP BADGE
@@ -688,25 +642,24 @@ main>.panel {
 }
 
 .badge-np {
-  background: var(--badge-np-bg);
-  color: var(--badge-np-text);
+  background: #eceaf0;
+  color: #4d4758;
 }
 
 .badge-bronze {
-  background: var(--badge-bronze-bg);
-  color: var(--badge-bronze-text);
+  background: #f1dfd1;
+  color: #82512d;
 }
 
 .badge-silver {
-  background: var(--badge-silver-bg);
-  color: var(--badge-silver-text);
+  background: #e8e8ed;
+  color: #505263;
 }
 
 .badge-gold {
-  background: var(--badge-gold-bg);
-  color: var(--badge-gold-text);
+  background: #f5e7bd;
+  color: #7c6017;
 }
-
 
 /* =========================================================
    LIST VIEW
@@ -768,7 +721,6 @@ main>.panel {
   padding-top: 0;
 }
 
-
 /* =========================================================
    FOOTER
    ========================================================= */
@@ -782,15 +734,15 @@ main>.panel {
 
   padding: 2.5rem 1.25rem;
 
-  background: var(--color-primary-dark);
+  background: #24183f;
 
-  border-top: 2px solid var(--color-accent);
+  border-top: 2px solid #b83a00;
 
   text-align: center;
 }
 
 .footer__contact address {
-  color: rgba(255, 255, 255, 0.68);
+  color: #ffffffad;
 
   font-size: 0.8rem;
 
@@ -802,7 +754,7 @@ main>.panel {
 
   margin-bottom: 0.25rem;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   font-family: var(--font-heading);
 
@@ -816,17 +768,17 @@ main>.panel {
 }
 
 .footer__socials a {
-  color: rgba(255, 255, 255, 0.72);
+  color: #ffffffb8;
 
   transition: color 0.15s ease;
 }
 
 .footer__socials a:hover {
-  color: var(--color-accent);
+  color: #b83a00;
 }
 
 .footer__dev {
-  color: rgba(255, 255, 255, 0.62);
+  color: #ffffff9e;
 
   font-size: 0.75rem;
 
@@ -851,16 +803,16 @@ main>.panel {
 }
 
 .event-card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: #ffffff;
+  border: 1px solid #ddd8e7;
   border-radius: var(--radius-md);
   padding: 1.1rem 1.25rem;
 }
 
 .event-card__date {
   display: inline-block;
-  background: var(--color-accent-soft);
-  color: var(--color-accent-strong);
+  background: #fce5db;
+  color: #8a3517;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -876,11 +828,10 @@ main>.panel {
 }
 
 .event-card p:last-child {
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.88rem;
   line-height: 1.5;
 }
-
 
 /* =========================================================
    WEATHER
@@ -890,8 +841,8 @@ main>.panel {
   display: flex;
   align-items: center;
   gap: 1rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: #ffffff;
+  border: 1px solid #ddd8e7;
   border-radius: var(--radius-md);
   padding: 1.25rem;
   margin-bottom: 1rem;
@@ -905,11 +856,11 @@ main>.panel {
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 700;
-  color: var(--color-primary);
+  color: #382766;
 }
 
 .weather__desc {
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.9rem;
 }
 
@@ -920,7 +871,7 @@ main>.panel {
 }
 
 .weather__forecast-day {
-  background: var(--color-surface-soft);
+  background: #f0edf7;
   border-radius: var(--radius-sm);
   padding: 0.85rem 0.5rem;
   text-align: center;
@@ -928,7 +879,7 @@ main>.panel {
 
 .weather__forecast-label {
   font-size: 0.78rem;
-  color: var(--color-ink-soft);
+  color: #5f586f;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin-bottom: 0.3rem;
@@ -937,9 +888,8 @@ main>.panel {
 .weather__forecast-temp {
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--color-ink);
+  color: #211a33;
 }
-
 
 /* =========================================================
    MEMBER SPOTLIGHTS
@@ -955,8 +905,8 @@ main>.panel {
   display: flex;
   gap: 1rem;
   align-items: center;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: #ffffff;
+  border: 1px solid #ddd8e7;
   border-radius: var(--radius-md);
   padding: 1rem 1.1rem;
 }
@@ -968,7 +918,7 @@ main>.panel {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--color-surface-soft);
+  background: #f0edf7;
   border-radius: var(--radius-sm);
   padding: 0.4rem;
 }
@@ -982,17 +932,17 @@ main>.panel {
 .spotlight-card__name {
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--color-primary);
+  color: #382766;
   margin-bottom: 0.2rem;
 }
 
 .spotlight-card__detail {
   font-size: 0.8rem;
-  color: var(--color-ink-soft);
+  color: #5f586f;
 }
 
 .spotlight-card__detail a {
-  color: var(--color-primary);
+  color: #382766;
 }
 
 .spotlight-card .badge {
@@ -1017,10 +967,9 @@ main>.panel {
 
 .join-section__intro p {
   margin: 0;
-  color: var(--color-ink-soft);
+  color: #5f586f;
   line-height: 1.7;
 }
-
 
 /* Main join layout */
 
@@ -1030,18 +979,16 @@ main>.panel {
   gap: 2rem;
 }
 
-
 /* Form */
 
 .join-form {
   min-width: 0;
   padding: 1.5rem;
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  background: #ffffff;
+  border: 1px solid #ddd8e7;
   border-radius: 1rem;
-  box-shadow: 0 8px 30px rgba(33, 26, 51, 0.06);
+  box-shadow: 0 8px 30px #211a330f;
 }
-
 
 /* Form section headings */
 
@@ -1051,7 +998,7 @@ main>.panel {
   align-items: flex-start;
   margin: 0 0 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid #ddd8e7;
 }
 
 .form-section-heading:not(:first-child) {
@@ -1065,8 +1012,8 @@ main>.panel {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
-  background: var(--color-primary);
-  color: var(--color-surface);
+  background: #382766;
+  color: #ffffff;
   font-size: 0.75rem;
   font-weight: 700;
 }
@@ -1078,11 +1025,10 @@ main>.panel {
 
 .form-section-heading p {
   margin: 0;
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.85rem;
   line-height: 1.5;
 }
-
 
 /* Form grid */
 
@@ -1092,23 +1038,21 @@ main>.panel {
   gap: 1.1rem;
 }
 
-
 /* Labels */
 
 .join-form label {
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  color: var(--color-ink);
+  color: #211a33;
   font-size: 0.9rem;
   font-weight: 600;
 }
 
 .required-mark {
-  color: var(--color-accent-strong);
+  color: #8a3517;
   font-weight: 700;
 }
-
 
 /* Inputs */
 
@@ -1119,10 +1063,10 @@ main>.panel {
   width: 100%;
   box-sizing: border-box;
   padding: 0.8rem 0.85rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid #ddd8e7;
   border-radius: 0.55rem;
-  background: var(--color-bg);
-  color: var(--color-ink);
+  background: #f7f6f3;
+  color: #211a33;
   font: inherit;
   font-size: 0.95rem;
   transition:
@@ -1138,30 +1082,29 @@ main>.panel {
 
 .join-form input::placeholder,
 .join-form textarea::placeholder {
-  color: var(--color-ink-soft);
+  color: #5f586f;
   opacity: 0.8;
 }
 
 .join-form input:focus,
 .join-form textarea:focus {
   outline: none;
-  border-color: var(--color-primary);
-  background: var(--color-surface);
-  box-shadow: 0 0 0 3px rgba(56, 39, 102, 0.12);
+  border-color: #382766;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px #3827661f;
 }
 
 .join-form input:invalid:not(:placeholder-shown),
 .join-form textarea:invalid:not(:placeholder-shown) {
-  border-color: var(--color-accent);
+  border-color: #b83a00;
 }
 
 .join-form label small {
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.75rem;
   font-weight: 400;
   line-height: 1.4;
 }
-
 
 /* Membership fieldset */
 
@@ -1175,11 +1118,10 @@ main>.panel {
 
 .membership-fieldset legend {
   margin-bottom: 0.75rem;
-  color: var(--color-ink);
+  color: #211a33;
   font-size: 0.9rem;
   font-weight: 700;
 }
-
 
 /* Radio choices */
 
@@ -1189,9 +1131,9 @@ main>.panel {
   align-items: flex-start;
   gap: 0.75rem !important;
   padding: 0.85rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid #ddd8e7;
   border-radius: 0.6rem;
-  background: var(--color-bg);
+  background: #f7f6f3;
   cursor: pointer;
   transition:
     border-color 160ms ease,
@@ -1199,15 +1141,15 @@ main>.panel {
 }
 
 .radio-label:hover {
-  border-color: var(--color-primary-light);
-  background: var(--color-surface-soft);
+  border-color: #59468a;
+  background: #f0edf7;
 }
 
 .radio-label input {
   flex: 0 0 auto;
   width: auto;
   margin-top: 0.2rem;
-  accent-color: var(--color-primary);
+  accent-color: #382766;
 }
 
 .radio-label span {
@@ -1221,11 +1163,10 @@ main>.panel {
 }
 
 .radio-label small {
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.75rem;
   font-weight: 400;
 }
-
 
 /* Submit button */
 
@@ -1238,8 +1179,8 @@ main>.panel {
   padding: 0.95rem 1.1rem;
   border: 0;
   border-radius: 0.6rem;
-  background: var(--color-primary);
-  color: var(--color-surface);
+  background: #382766;
+  color: #ffffff;
   font: inherit;
   font-weight: 600;
   cursor: pointer;
@@ -1249,7 +1190,7 @@ main>.panel {
 }
 
 .join-submit:hover {
-  background: var(--color-primary-dark);
+  background: #24183f;
 }
 
 .join-submit:active {
@@ -1259,10 +1200,9 @@ main>.panel {
 .join-submit:focus-visible,
 .membership-card__link:focus-visible,
 .modal-close:focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid #b83a00;
   outline-offset: 3px;
 }
-
 
 /* =========================================
    MEMBERSHIP CARDS
@@ -1279,7 +1219,7 @@ main>.panel {
 }
 
 .membership-intro>span {
-  color: var(--color-primary);
+  color: #382766;
   font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1293,20 +1233,19 @@ main>.panel {
 
 .membership-intro p {
   margin: 0;
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.9rem;
   line-height: 1.6;
 }
-
 
 /* Cards animate on initial page load */
 
 .membership-card {
   padding: 1.2rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid #ddd8e7;
   border-radius: 0.85rem;
-  background: var(--color-surface);
-  box-shadow: 0 6px 20px rgba(33, 26, 51, 0.05);
+  background: #ffffff;
+  box-shadow: 0 6px 20px #211a330d;
 
   opacity: 0;
   transform: translateY(1rem);
@@ -1339,14 +1278,14 @@ main>.panel {
 }
 
 .membership-card__label {
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
 }
 
 .membership-card__price {
-  color: var(--color-primary);
+  color: #382766;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1359,7 +1298,7 @@ main>.panel {
 
 .membership-card p {
   margin: 0 0 1rem;
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.85rem;
   line-height: 1.6;
 }
@@ -1370,8 +1309,8 @@ main>.panel {
   gap: 0.5rem;
   padding: 0;
   border: 0;
-  background: transparent;
-  color: var(--color-primary);
+  background: #00000000;
+  color: #382766;
   font: inherit;
   font-size: 0.85rem;
   font-weight: 700;
@@ -1379,28 +1318,26 @@ main>.panel {
 }
 
 .membership-card__link:hover {
-  color: var(--color-accent-dark);
+  color: #c94b22;
 }
-
 
 /* Small visual distinction */
 
 .membership-card--np {
-  border-top: 3px solid var(--color-ink-soft);
+  border-top: 3px solid #5f586f;
 }
 
 .membership-card--bronze {
-  border-top: 3px solid #A66A3F;
+  border-top: 3px solid #a66a3f;
 }
 
 .membership-card--silver {
-  border-top: 3px solid #8A8A8A;
+  border-top: 3px solid #8a8a8a;
 }
 
 .membership-card--gold {
-  border-top: 3px solid #C79A22;
+  border-top: 3px solid #c79a22;
 }
-
 
 @keyframes membershipCardIn {
   from {
@@ -1414,7 +1351,6 @@ main>.panel {
   }
 }
 
-
 /* =========================================
    MEMBERSHIP DIALOGS
    ========================================= */
@@ -1424,13 +1360,13 @@ main>.panel {
   padding: 0;
   border: 0;
   border-radius: 1rem;
-  background: var(--color-surface);
-  color: var(--color-ink);
-  box-shadow: 0 20px 60px rgba(33, 26, 51, 0.25);
+  background: #ffffff;
+  color: #211a33;
+  box-shadow: 0 20px 60px #211a3340;
 }
 
 .membership-modal::backdrop {
-  background: rgba(33, 26, 51, 0.65);
+  background: #211a33a6;
 }
 
 .membership-modal__content {
@@ -1446,7 +1382,7 @@ main>.panel {
 }
 
 .membership-modal__header>span {
-  color: var(--color-accent);
+  color: #b83a00;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1459,17 +1395,17 @@ main>.panel {
   width: 2.1rem;
   height: 2.1rem;
   padding: 0;
-  border: 1px solid var(--color-border);
+  border: 1px solid #ddd8e7;
   border-radius: 50%;
-  background: var(--color-bg);
-  color: var(--color-ink);
+  background: #f7f6f3;
+  color: #211a33;
   font-size: 1.3rem;
   line-height: 1;
   cursor: pointer;
 }
 
 .modal-close:hover {
-  background: var(--color-surface-soft);
+  background: #f0edf7;
 }
 
 .membership-modal h2 {
@@ -1479,7 +1415,7 @@ main>.panel {
 
 .membership-modal p {
   margin: 0 0 1.2rem;
-  color: var(--color-ink-soft);
+  color: #5f586f;
   line-height: 1.65;
 }
 
@@ -1493,7 +1429,6 @@ main>.panel {
   line-height: 1.5;
 }
 
-
 /* =========================================
    THANK YOU PAGE
    ========================================= */
@@ -1506,19 +1441,19 @@ main>.panel {
 
 .thankyou-card {
   padding: 1.5rem;
-  border: 1px solid var(--color-border);
+  border: 1px solid #ddd8e7;
   border-radius: 1rem;
-  background: var(--color-surface);
-  box-shadow: 0 10px 35px rgba(33, 26, 51, 0.07);
+  background: #ffffff;
+  box-shadow: 0 10px 35px #211a3312;
 }
 
 .thankyou-card__intro {
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid #ddd8e7;
 }
 
 .thankyou-eyebrow {
-  color: var(--color-accent);
+  color: #b83a00;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1532,10 +1467,9 @@ main>.panel {
 
 .thankyou-card__intro p {
   margin: 0;
-  color: var(--color-ink-soft);
+  color: #5f586f;
   line-height: 1.6;
 }
-
 
 /* Submitted details */
 
@@ -1551,11 +1485,11 @@ main>.panel {
   flex-direction: column;
   gap: 0.3rem;
   padding: 1rem 0;
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 1px solid #ddd8e7;
 }
 
 .thankyou-detail span {
-  color: var(--color-ink-soft);
+  color: #5f586f;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -1563,7 +1497,7 @@ main>.panel {
 }
 
 .thankyou-detail strong {
-  color: var(--color-ink);
+  color: #211a33;
   font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.5;
@@ -1580,7 +1514,6 @@ main>.panel {
 .thankyou-card__actions .button {
   text-align: center;
 }
-
 
 /* Respect reduced-motion preferences */
 

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Join | Eko Chamber of Commerce</title>
+
+  <meta name="description"
+    content="Apply for membership with the Eko Chamber of Commerce and connect your business with organizations across Lagos.">
+
+  <meta name="author" content="Emmanuel Esomojumi">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+
+  <div class="site-topbar">
+
+    <header class="site-header">
+
+      <a class="brand" href="index.html">
+        <img src="images/business-logo.webp" alt="" class="brand__mark" width="80" height="69">
+
+        <span class="brand__text">
+          <span class="brand__name">Eko Chamber of Commerce</span>
+          <span class="brand__tag">Connecting businesses across Lagos</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav"
+        aria-label="Open menu">
+
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+
+      </button>
+
+    </header>
+
+    <nav class="primary-nav" id="primaryNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Business Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+
+  <main>
+
+    <div class="heading-band">
+      <div class="heading-band__inner">
+        <h1>Join the Chamber</h1>
+        <p class="page-heading__subtitle">
+          Connect your business with opportunities across Lagos.
+        </p>
+      </div>
+    </div>
+
+
+    <section class="join-section">
+
+      <div class="join-section__intro">
+        <p>
+          Become part of the Eko Chamber of Commerce and connect with
+          businesses, organizations, and opportunities across Lagos.
+        </p>
+      </div>
+
+
+      <div class="join-layout">
+
+        <!-- APPLICATION FORM -->
+        <form class="join-form" action="thankyou.html" method="get">
+
+          <div class="form-section-heading">
+            <span class="form-section-heading__number">01</span>
+
+            <div>
+              <h2>Applicant Information</h2>
+              <p>Tell us who you are and how we can contact you.</p>
+            </div>
+          </div>
+
+
+          <div class="form-grid">
+
+            <label>
+              <span>First Name <span class="required-mark">*</span></span>
+
+              <input type="text" name="firstName" title="Enter your first name" autocomplete="given-name" required>
+            </label>
+
+
+            <label>
+              <span>Last Name <span class="required-mark">*</span></span>
+
+              <input type="text" name="lastName" title="Enter your last name" autocomplete="family-name" required>
+            </label>
+
+
+            <label class="form-field--full">
+              <span>
+                Organizational Title
+                <span class="required-mark">*</span>
+              </span>
+
+              <input type="text" name="orgTitle"
+                title="Enter your organizational title. Use letters, spaces, and hyphens. Minimum 7 characters."
+                autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" minlength="7" required>
+
+              <small>
+                Example: Managing Director
+              </small>
+            </label>
+
+
+            <label>
+              <span>Email Address <span class="required-mark">*</span></span>
+
+              <input type="email" name="email" title="Enter your email address" autocomplete="email"
+                placeholder="name@example.com" required>
+            </label>
+
+
+            <label>
+              <span>Mobile Phone Number <span class="required-mark">*</span></span>
+
+              <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                placeholder="+234 801 234 5678" required>
+            </label>
+
+          </div>
+
+
+          <div class="form-section-heading">
+            <span class="form-section-heading__number">02</span>
+
+            <div>
+              <h2>Organization</h2>
+              <p>Provide information about your business or organization.</p>
+            </div>
+          </div>
+
+
+          <div class="form-grid">
+
+            <label class="form-field--full">
+              <span>
+                Business/Organization Name
+                <span class="required-mark">*</span>
+              </span>
+
+              <input type="text" name="organization" title="Enter your business or organization name"
+                autocomplete="organization" required>
+            </label>
+
+
+            <label class="form-field--full">
+              <span>Business/Organization Description</span>
+
+              <textarea name="description" title="Briefly describe your business or organization" rows="5"
+                placeholder="Tell us briefly about your business or organization."></textarea>
+            </label>
+
+          </div>
+
+
+          <div class="form-section-heading">
+            <span class="form-section-heading__number">03</span>
+
+            <div>
+              <h2>Membership</h2>
+              <p>Select the membership level that suits your organization.</p>
+            </div>
+          </div>
+
+
+          <fieldset class="membership-fieldset">
+
+            <legend>
+              Membership Level
+              <span class="required-mark">*</span>
+            </legend>
+
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="np" required>
+
+              <span>
+                <strong>NP Membership</strong>
+                <small>No fee</small>
+              </span>
+            </label>
+
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="bronze">
+
+              <span>
+                <strong>Bronze Membership</strong>
+                <small>Entry-level business benefits</small>
+              </span>
+            </label>
+
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="silver">
+
+              <span>
+                <strong>Silver Membership</strong>
+                <small>Expanded business benefits</small>
+              </span>
+            </label>
+
+
+            <label class="radio-label">
+              <input type="radio" name="membershipLevel" value="gold">
+
+              <span>
+                <strong>Gold Membership</strong>
+                <small>Premium business benefits</small>
+              </span>
+            </label>
+
+          </fieldset>
+
+
+          <!-- Required hidden timestamp -->
+          <input type="hidden" name="timestamp" id="timestamp">
+
+
+          <button type="submit" class="join-submit">
+
+            Submit Membership Application
+
+            <span aria-hidden="true">→</span>
+
+          </button>
+
+        </form>
+
+
+        <!-- MEMBERSHIP INFORMATION -->
+        <aside class="membership-cards" aria-label="Membership levels">
+
+          <div class="membership-intro">
+            <span>Membership options</span>
+            <h2>Choose your level</h2>
+            <p>
+              Explore the benefits included with each membership level.
+            </p>
+          </div>
+
+
+          <article class="membership-card membership-card--np">
+
+            <div class="membership-card__top">
+              <span class="membership-card__label">01</span>
+              <span class="membership-card__price">FREE</span>
+            </div>
+
+            <h3>NP Membership</h3>
+
+            <p>
+              Designed for eligible nonprofit organizations.
+            </p>
+
+            <button type="button" class="membership-card__link" data-modal="modal-np" aria-haspopup="dialog">
+
+              View benefits
+              <span aria-hidden="true">→</span>
+
+            </button>
+
+          </article>
+
+
+          <article class="membership-card membership-card--bronze">
+
+            <div class="membership-card__top">
+              <span class="membership-card__label">02</span>
+              <span class="membership-card__price">BRONZE</span>
+            </div>
+
+            <h3>Bronze Membership</h3>
+
+            <p>
+              A practical starting point for growing businesses.
+            </p>
+
+            <button type="button" class="membership-card__link" data-modal="modal-bronze" aria-haspopup="dialog">
+
+              View benefits
+              <span aria-hidden="true">→</span>
+
+            </button>
+
+          </article>
+
+
+          <article class="membership-card membership-card--silver">
+
+            <div class="membership-card__top">
+              <span class="membership-card__label">03</span>
+              <span class="membership-card__price">SILVER</span>
+            </div>
+
+            <h3>Silver Membership</h3>
+
+            <p>
+              Expanded opportunities for established businesses.
+            </p>
+
+            <button type="button" class="membership-card__link" data-modal="modal-silver" aria-haspopup="dialog">
+
+              View benefits
+              <span aria-hidden="true">→</span>
+
+            </button>
+
+          </article>
+
+
+          <article class="membership-card membership-card--gold">
+
+            <div class="membership-card__top">
+              <span class="membership-card__label">04</span>
+              <span class="membership-card__price">GOLD</span>
+            </div>
+
+            <h3>Gold Membership</h3>
+
+            <p>
+              Premium opportunities for organizations seeking greater visibility.
+            </p>
+
+            <button type="button" class="membership-card__link" data-modal="modal-gold" aria-haspopup="dialog">
+
+              View benefits
+              <span aria-hidden="true">→</span>
+
+            </button>
+
+          </article>
+
+        </aside>
+
+      </div>
+
+    </section>
+
+
+    <!-- MEMBERSHIP DIALOGS -->
+
+    <dialog id="modal-np" class="membership-modal" aria-labelledby="modal-np-title">
+
+      <div class="membership-modal__content">
+
+        <div class="membership-modal__header">
+          <span>Membership 01</span>
+
+          <button type="button" class="modal-close" aria-label="Close NP membership information">
+
+            &times;
+
+          </button>
+        </div>
+
+        <h2 id="modal-np-title">NP Membership</h2>
+
+        <p>
+          A no-fee option for eligible nonprofit organizations.
+        </p>
+
+        <ul>
+          <li>Basic chamber membership</li>
+          <li>Community networking opportunities</li>
+          <li>Access to selected chamber events</li>
+          <li>Opportunity to connect with local organizations</li>
+        </ul>
+
+      </div>
+
+    </dialog>
+
+
+    <dialog id="modal-bronze" class="membership-modal" aria-labelledby="modal-bronze-title">
+
+      <div class="membership-modal__content">
+
+        <div class="membership-modal__header">
+          <span>Membership 02</span>
+
+          <button type="button" class="modal-close" aria-label="Close Bronze membership information">
+
+            &times;
+
+          </button>
+        </div>
+
+        <h2 id="modal-bronze-title">Bronze Membership</h2>
+
+        <p>
+          A practical membership level for businesses beginning to build
+          their chamber network.
+        </p>
+
+        <ul>
+          <li>Networking opportunities</li>
+          <li>Access to selected chamber events</li>
+          <li>Business visibility opportunities</li>
+          <li>Member resources and updates</li>
+        </ul>
+
+      </div>
+
+    </dialog>
+
+
+    <dialog id="modal-silver" class="membership-modal" aria-labelledby="modal-silver-title">
+
+      <div class="membership-modal__content">
+
+        <div class="membership-modal__header">
+          <span>Membership 03</span>
+
+          <button type="button" class="modal-close" aria-label="Close Silver membership information">
+
+            &times;
+
+          </button>
+        </div>
+
+        <h2 id="modal-silver-title">Silver Membership</h2>
+
+        <p>
+          Expanded chamber opportunities for established businesses.
+        </p>
+
+        <ul>
+          <li>Enhanced business visibility</li>
+          <li>Networking and professional events</li>
+          <li>Additional promotional opportunities</li>
+          <li>Access to selected member resources</li>
+        </ul>
+
+      </div>
+
+    </dialog>
+
+
+    <dialog id="modal-gold" class="membership-modal" aria-labelledby="modal-gold-title">
+
+      <div class="membership-modal__content">
+
+        <div class="membership-modal__header">
+          <span>Membership 04</span>
+
+          <button type="button" class="modal-close" aria-label="Close Gold membership information">
+
+            &times;
+
+          </button>
+        </div>
+
+        <h2 id="modal-gold-title">Gold Membership</h2>
+
+        <p>
+          Premium membership for organizations seeking greater visibility
+          and engagement.
+        </p>
+
+        <ul>
+          <li>Premium business visibility</li>
+          <li>Expanded networking opportunities</li>
+          <li>Additional promotional opportunities</li>
+          <li>Access to selected chamber events and resources</li>
+        </ul>
+
+      </div>
+
+    </dialog>
+
+  </main>
+
+
+  <footer class="site-footer">
+
+    <div class="footer__contact">
+      <address>
+        <strong>Eko Chamber of Commerce</strong>
+        14 Balogun Street<br>
+        Lagos Island, Lagos, Nigeria<br>
+        info@ekochamber.org.ng<br>
+        +234 1 555 0100
+      </address>
+    </div>
+
+
+    <div class="footer__socials">
+
+      <a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube">
+
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path fill="currentColor"
+            d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.5V8.5L15.8 12Z" />
+        </svg>
+
+      </a>
+
+
+      <a href="https://x.com" target="_blank" rel="noopener" aria-label="X (Twitter)">
+
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor"
+            d="M18.24 2.75h3.29l-7.19 8.22 8.46 10.28h-6.63l-5.19-6.7-5.94 6.7H1.75l7.7-8.8L1.35 2.75h6.8l4.7 6.13 5.39-6.13Zm-1.16 16.62h1.82L7.02 4.53H5.06l12.02 14.84Z" />
+        </svg>
+
+      </a>
+
+
+      <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn">
+
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+          <path fill="currentColor"
+            d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+        </svg>
+
+      </a>
+
+    </div>
+
+
+    <div class="footer__dev">
+      <p>WDD231 Class Project</p>
+      <p>Emmanuel Esomojumi</p>
+      <p>&copy; <span id="currentyear"></span> Eko Chamber of Commerce</p>
+      <p id="lastModified"></p>
+    </div>
+
+  </footer>
+
+</body>
+
+</html>

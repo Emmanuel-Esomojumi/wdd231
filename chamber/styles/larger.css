@@ -75,7 +75,7 @@
     background: transparent;
   }
 
-    /* ---------- Hero ---------- */
+  /* ---------- Hero ---------- */
 
   .hero__content {
     padding: 2.5rem;
@@ -98,8 +98,8 @@
 
   /* ---------- Main content ---------- */
 
-  main > section,
-  main > .panel {
+  main>section,
+  main>.panel {
     padding: 3rem 2.5rem;
   }
 
@@ -120,7 +120,7 @@
     padding: 1.45rem 1.4rem 1.5rem;
   }
 
-    /* ---------- Events / Spotlights ---------- */
+  /* ---------- Events / Spotlights ---------- */
 
   .events__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -132,6 +132,67 @@
 
   .spotlight-card {
     align-items: flex-start;
+  }
+
+  /* ---------- Join page ---------- */
+
+  .join-section {
+    padding-top: 3rem;
+  }
+
+  .join-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(18rem, 0.9fr);
+    align-items: start;
+    gap: 2.5rem;
+  }
+
+  /* Form */
+
+  .join-form {
+    padding: 2rem;
+  }
+
+  /* Form fields */
+
+  .form-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1.2rem;
+    row-gap: 1.25rem;
+  }
+
+  .form-field--full {
+    grid-column: 1 / -1;
+  }
+
+  /* Membership cards */
+
+  .membership-cards {
+    position: sticky;
+    top: 7rem;
+  }
+
+  /* Thank you page */
+
+  .thankyou-card {
+    padding: 2.25rem;
+  }
+
+  .thankyou-details {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+  }
+
+  .thankyou-detail--full {
+    grid-column: 1 / -1;
+  }
+
+  .thankyou-card__actions {
+    flex-direction: row;
+  }
+
+  .thankyou-card__actions .button {
+    flex: 0 0 auto;
   }
 
   /* ---------- Footer ---------- */
@@ -181,10 +242,8 @@
   }
 
   .site-footer {
-    padding-inline: max(
-      2.5rem,
-      calc((100% - var(--max-width)) / 2)
-    );
+    padding-inline: max(2.5rem,
+        calc((100% - var(--max-width)) / 2));
   }
 }
 

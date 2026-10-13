@@ -1429,6 +1429,7 @@ main>.panel {
     "place7"
     "place8";
   gap: 1.25rem;
+  min-height: 3400px;
 }
 
 .discover-card {

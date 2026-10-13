@@ -8,12 +8,6 @@
    DISCOVER IMAGE FIX (all sizes)
    ========================================================= */
 
-/* I let the aspect ratio set the height, because the height
-   attribute from the JS was locking every image at 200px. */
-.discover-card__image img {
-  height: auto;
-}
-
 /* =========================================================
    MEDIUM AND UP (641px+)
    ========================================================= */
@@ -220,6 +214,7 @@
       "place5 place6"
       "place7 place8";
     gap: 1.5rem;
+    min-height: 1900px;
   }
 }
 
@@ -262,6 +257,7 @@
       "place4 place4 place5 place5 place6 place6"
       ".      place7 place7 place8 place8 .";
     gap: 1.5rem;
+    min-height: 1300px;
   }
 }
 
@@ -312,22 +308,5 @@
 @media (prefers-reduced-motion: reduce) {
   .primary-nav a::after {
     transition: none;
-  }
-}
-
-/* I reserve room for the cards so the footer doesn't jump when they load. */
-.discover-grid {
-  min-height: 3400px;
-}
-
-@media (min-width: 641px) {
-  .discover-grid {
-    min-height: 1900px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .discover-grid {
-    min-height: 1300px;
   }
 }

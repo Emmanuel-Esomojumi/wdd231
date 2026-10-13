@@ -1,22 +1,24 @@
 /* =========================================================
    EKO CHAMBER OF COMMERCE
-   Mobile-first design system
+   small.css: mobile-first base (320px - 640px)
    ========================================================= */
 
 :root {
-  /* ---------- Core colors ---------- */
+  /* Core colors */
+  --color-accent: #c94b22;
+  --color-primary: #382766;
+  --color-primary-dark: #24183f;
+  --color-text: #211a33;
+  --color-surface: #ffffff;
 
-  /* ---------- Membership ---------- */
-
-  /* ---------- Typography ---------- */
+  /* Typography */
   --font-heading: "Fraunces", serif;
   --font-body: "Inter", sans-serif;
 
-  /* ---------- Layout ---------- */
+  /* Layout */
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 16px;
-
   --max-width: 72rem;
 }
 
@@ -88,11 +90,16 @@ h3 {
   justify-content: space-between;
   gap: 1rem;
   padding: 1rem 1.25rem;
-
   background: #24183f;
 }
 
-/* ---------- Brand ---------- */
+.site-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Brand */
 
 .brand {
   min-height: 48px;
@@ -123,37 +130,24 @@ h3 {
 
 .brand__tag {
   margin-top: 0.2rem;
-
   color: #f49a78;
-
   font-size: 0.65rem;
   font-weight: 700;
-
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.site-topbar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-/* ---------- Mobile menu button ---------- */
+/* Mobile menu button */
 
 .nav-toggle {
   width: 48px;
   height: 48px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   gap: 5px;
-
   background: #00000000;
-
   border: 1px solid #ffffff2e;
   border-radius: var(--radius-sm);
 }
@@ -161,11 +155,8 @@ h3 {
 .nav-toggle__bar {
   width: 22px;
   height: 2px;
-
   background: #ffffff;
-
   border-radius: 2px;
-
   transition:
     transform 0.2s ease,
     opacity 0.2s ease;
@@ -189,13 +180,9 @@ h3 {
 
 .primary-nav {
   max-height: 0;
-
   overflow: hidden;
-
   border-bottom: 2px solid #b83a00;
-
   background: #24183f;
-
   transition: max-height 0.25s ease;
 }
 
@@ -210,14 +197,10 @@ h3 {
 
 .primary-nav a {
   display: block;
-
   padding: 0.85rem 1.25rem;
-
   color: #ffffffc7;
-
   font-size: 0.9rem;
   font-weight: 500;
-
   border-top: 1px solid #ffffff14;
 }
 
@@ -237,9 +220,7 @@ h3 {
 
 .heading-band {
   background: #382766;
-
   padding: 2.5rem 1.25rem 2.35rem;
-
   text-align: center;
 }
 
@@ -250,17 +231,13 @@ h3 {
 
 .heading-band h1 {
   color: #ffffff;
-
   font-size: clamp(2rem, 8vw, 2.8rem);
-
   letter-spacing: -0.02em;
 }
 
 .heading-band .page-heading__subtitle {
   margin-top: 0.5rem;
-
   color: #ffffffd1;
-
   font-size: 0.95rem;
 }
 
@@ -311,7 +288,7 @@ h3 {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #b83a00;
+  color: #f49a78;
   margin-bottom: 0.5rem;
 }
 
@@ -350,7 +327,7 @@ h3 {
 }
 
 .button:hover {
-  background: #c94b22;
+  background: #a83d18;
 }
 
 /* =========================================================
@@ -360,17 +337,13 @@ h3 {
 main>section,
 main>.panel {
   max-width: var(--max-width);
-
   margin-inline: auto;
-
   padding: 2.5rem 1.25rem;
 }
 
 .page-heading__subtitle {
   margin-top: 0.4rem;
-
   color: #5f586f;
-
   font-size: 0.95rem;
 }
 
@@ -382,11 +355,8 @@ main>.panel {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 1rem;
-
   flex-wrap: wrap;
-
   margin: 0 0 1.75rem;
 }
 
@@ -397,18 +367,13 @@ main>.panel {
 
 .view-btn {
   min-width: 78px;
-
   padding: 0.6rem 0.9rem;
-
   border: 1px solid #ddd8e7;
   border-radius: var(--radius-sm);
-
   background: #ffffff;
   color: #211a33;
-
   font-size: 0.82rem;
   font-weight: 600;
-
   transition:
     background-color 0.15s ease,
     color 0.15s ease,
@@ -421,15 +386,12 @@ main>.panel {
 
 .view-btn.is-active {
   background: #382766;
-
   border-color: #382766;
-
   color: #ffffff;
 }
 
 .directory__count {
   color: #5f586f;
-
   font-size: 0.8rem;
 }
 
@@ -440,9 +402,7 @@ main>.panel {
 .directory-list {
   display: grid;
   min-height: 600px;
-
   grid-template-columns: 1fr;
-
   gap: 1.5rem;
 }
 
@@ -453,14 +413,10 @@ main>.panel {
 .member-card {
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
-
   background: #ffffff;
-
   border: 1px solid #ddd8e7;
   border-radius: var(--radius-md);
-
   transition:
     border-color 0.2s ease,
     transform 0.2s ease,
@@ -469,175 +425,118 @@ main>.panel {
 
 .member-card:hover {
   border-color: #c9c0da;
-
   transform: translateY(-2px);
-
   box-shadow: 0 8px 24px #24183f14;
 }
 
-/* =========================================================
-   BUSINESS LOGO
-   ========================================================= */
+/* Business logo */
 
 .member-card__logo {
   min-height: 130px;
-
   display: grid;
   place-items: center;
-
   padding: 1.25rem;
-
   background: #f0edf7;
-
   border-bottom: 1px solid #ddd8e7;
 }
 
 .member-card__logo img {
   width: min(100%, 180px);
   height: 90px;
-
   object-fit: contain;
 }
 
-/* =========================================================
-   CARD BODY
-   ========================================================= */
+/* Card body */
 
 .member-card__body {
   flex: 1;
-
   display: flex;
   flex-direction: column;
-
   gap: 0;
-
   padding: 1.35rem 1.3rem 1.4rem;
 }
 
-/* ---------- Category ---------- */
-
 .member-card__category {
   margin-bottom: 0.45rem;
-
   color: #59468a;
-
   font-size: 0.65rem;
   font-weight: 700;
-
   letter-spacing: 0.07em;
   text-transform: uppercase;
 }
 
-/* ---------- Business name ---------- */
-
 .member-card__name {
   margin: 0;
-
   color: #382766;
-
   font-family: var(--font-heading);
-
   font-size: 1.2rem;
   font-weight: 700;
-
   line-height: 1.2;
 }
 
-/* ---------- Tagline ---------- */
-
 .member-card__tagline {
   margin-top: 0.4rem;
-
   color: #5f586f;
-
   font-size: 0.84rem;
-
   line-height: 1.5;
 }
 
-/* ---------- Description ---------- */
-
 .member-card__description {
   margin-top: 1rem;
-
   color: #211a33;
-
   font-size: 0.82rem;
-
   line-height: 1.6;
-
   max-width: 42ch;
-
   display: -webkit-box;
-
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-
+  line-clamp: 3;
   overflow: hidden;
 }
 
-/* =========================================================
-   MEMBER DETAILS / CONTACT
-   ========================================================= */
+/* Member details / contact */
 
 .member-card__details {
   display: flex;
   flex-direction: column;
-
   gap: 0.4rem;
-
   margin-top: 1.2rem;
-
   padding-top: 1rem;
-
   border-top: 1px solid #ddd8e7;
-
   font-size: 0.78rem;
 }
 
 .member-card__details strong {
   color: #211a33;
-
   font-weight: 600;
 }
 
 .member-card__details a {
   color: #382766;
-
   font-weight: 600;
 }
 
 .member-card__details a:hover {
   color: #c94b22;
-
   text-decoration: underline;
 }
 
-/* =========================================================
-   MEMBERSHIP BADGE
-   ========================================================= */
+/* Membership badge */
 
 .member-card__footer {
   display: flex;
   justify-content: flex-end;
-
   margin-top: auto;
-
   padding-top: 1rem;
 }
 
 .badge {
   display: inline-block;
-
   padding: 0.3rem 0.65rem;
-
   border-radius: 999px;
-
   font-size: 0.64rem;
   font-weight: 700;
-
   letter-spacing: 0.05em;
-
   text-transform: uppercase;
 }
 
@@ -667,13 +566,11 @@ main>.panel {
 
 .directory-list.is-list-view {
   grid-template-columns: 1fr;
-
   gap: 0.75rem;
 }
 
 .directory-list.is-list-view .member-card {
   flex-direction: row;
-
   align-items: center;
 }
 
@@ -683,13 +580,9 @@ main>.panel {
 
 .directory-list.is-list-view .member-card__body {
   flex-direction: row;
-
   align-items: center;
-
   flex-wrap: wrap;
-
   gap: 0.5rem 1.5rem;
-
   padding: 1rem 1.25rem;
 }
 
@@ -701,23 +594,16 @@ main>.panel {
 
 .directory-list.is-list-view .member-card__details {
   flex-direction: row;
-
   align-items: center;
-
   flex-wrap: wrap;
-
   gap: 0.4rem 1.25rem;
-
   margin-top: 0;
-
   padding-top: 0;
-
   border-top: none;
 }
 
 .directory-list.is-list-view .member-card__footer {
   margin-top: 0;
-
   padding-top: 0;
 }
 
@@ -729,59 +615,44 @@ main>.panel {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   gap: 1.25rem;
-
   padding: 2.5rem 1.25rem;
-
   background: #24183f;
-
   border-top: 2px solid #b83a00;
-
   text-align: center;
 }
 
 .footer__contact address {
   color: #ffffffad;
-
   font-size: 0.8rem;
-
   line-height: 1.7;
 }
 
 .footer__contact address strong {
   display: block;
-
   margin-bottom: 0.25rem;
-
   color: #ffffff;
-
   font-family: var(--font-heading);
-
   font-size: 1.05rem;
 }
 
 .footer__socials {
   display: flex;
-
   gap: 1rem;
 }
 
 .footer__socials a {
   color: #ffffffb8;
-
   transition: color 0.15s ease;
 }
 
 .footer__socials a:hover {
-  color: #b83a00;
+  color: #f49a78;
 }
 
 .footer__dev {
   color: #ffffff9e;
-
   font-size: 0.75rem;
-
   line-height: 1.7;
 }
 
@@ -950,9 +821,9 @@ main>.panel {
   display: inline-block;
 }
 
-/* =========================================
+/* =========================================================
    JOIN PAGE
-   ========================================= */
+   ========================================================= */
 
 .join-section {
   width: min(100% - 2rem, 72rem);
@@ -1083,7 +954,6 @@ main>.panel {
 .join-form input::placeholder,
 .join-form textarea::placeholder {
   color: #5f586f;
-  opacity: 0.8;
 }
 
 .join-form input:focus,
@@ -1125,11 +995,11 @@ main>.panel {
 
 /* Radio choices */
 
-.radio-label {
-  display: flex !important;
-  flex-direction: row !important;
+.join-form .radio-label {
+  display: flex;
+  flex-direction: row;
   align-items: flex-start;
-  gap: 0.75rem !important;
+  gap: 0.75rem;
   padding: 0.85rem;
   border: 1px solid #ddd8e7;
   border-radius: 0.6rem;
@@ -1204,9 +1074,9 @@ main>.panel {
   outline-offset: 3px;
 }
 
-/* =========================================
+/* =========================================================
    MEMBERSHIP CARDS
-   ========================================= */
+   ========================================================= */
 
 .membership-cards {
   display: flex;
@@ -1246,10 +1116,8 @@ main>.panel {
   border-radius: 0.85rem;
   background: #ffffff;
   box-shadow: 0 6px 20px #211a330d;
-
   opacity: 0;
   transform: translateY(1rem);
-
   animation: membershipCardIn 650ms ease forwards;
 }
 
@@ -1321,7 +1189,7 @@ main>.panel {
   color: #c94b22;
 }
 
-/* Small visual distinction */
+/* Small visual distinction per tier */
 
 .membership-card--np {
   border-top: 3px solid #5f586f;
@@ -1351,9 +1219,9 @@ main>.panel {
   }
 }
 
-/* =========================================
+/* =========================================================
    MEMBERSHIP DIALOGS
-   ========================================= */
+   ========================================================= */
 
 .membership-modal {
   width: min(90% - 2rem, 34rem);
@@ -1429,9 +1297,9 @@ main>.panel {
   line-height: 1.5;
 }
 
-/* =========================================
+/* =========================================================
    THANK YOU PAGE
-   ========================================= */
+   ========================================================= */
 
 .thankyou-content {
   width: min(100% - 2rem, 56rem);
@@ -1515,7 +1383,160 @@ main>.panel {
   text-align: center;
 }
 
-/* Respect reduced-motion preferences */
+/* =========================================================
+   DISCOVER PAGE
+   ========================================================= */
+
+.discover-content {
+  width: min(100% - 2rem, var(--max-width));
+  margin-inline: auto;
+  padding: 2rem 0 4rem;
+}
+
+.visit-message {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.1rem;
+  border-left: 4px solid #c94b22;
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  color: #211a33;
+}
+
+.discover-intro {
+  margin-bottom: 1.5rem;
+}
+
+.discover-intro h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.discover-intro p {
+  max-width: 65ch;
+  color: #5f586f;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas:
+    "place1"
+    "place2"
+    "place3"
+    "place4"
+    "place5"
+    "place6"
+    "place7"
+    "place8";
+  gap: 1.25rem;
+}
+
+.discover-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #ddd8e7;
+  border-radius: var(--radius-md);
+  background: #ffffff;
+}
+
+.discover-card:nth-child(1) {
+  grid-area: place1;
+}
+
+.discover-card:nth-child(2) {
+  grid-area: place2;
+}
+
+.discover-card:nth-child(3) {
+  grid-area: place3;
+}
+
+.discover-card:nth-child(4) {
+  grid-area: place4;
+}
+
+.discover-card:nth-child(5) {
+  grid-area: place5;
+}
+
+.discover-card:nth-child(6) {
+  grid-area: place6;
+}
+
+.discover-card:nth-child(7) {
+  grid-area: place7;
+}
+
+.discover-card:nth-child(8) {
+  grid-area: place8;
+}
+
+.discover-card__image {
+  overflow: hidden;
+  background: #f0edf7;
+}
+
+.discover-card__image img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.discover-card__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1.15rem;
+}
+
+.discover-card h2 {
+  font-size: 1.25rem;
+}
+
+.discover-card address {
+  color: #5f586f;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.discover-card p {
+  color: #211a33;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.discover-card__more {
+  color: #5f586f;
+  font-size: 0.88rem;
+}
+
+.discover-card__more[hidden] {
+  display: none;
+}
+
+.discover-card__button {
+  margin-top: auto;
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: #382766;
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.discover-card__button:hover {
+  background: #24183f;
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
   .membership-card {

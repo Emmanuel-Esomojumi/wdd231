@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="MatchUp project site plan outlining the purpose, audience, design, typography, colors, and home page wireframes for a games and competition platform.">
+    <title>MatchUp | Project Site Plan</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <p class="eyebrow">WDD 231 | Individual Project</p>
+            <h1>MatchUp</h1>
+            <p class="header-subtitle">Games, Players &amp; Competition</p>
+            <p class="header-description">
+                Project Site Plan
+            </p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="plan-section" id="site-name">
+            <h2>1. Site Name</h2>
+
+            <h3>MatchUp</h3>
+
+            <p>
+                MatchUp represents the main goal of the platform: bringing
+                together people who want to play games, find opponents,
+                discover venues, connect with coaches, and participate
+                in competitions.
+            </p>
+
+            <p>
+                The name is short, memorable, and flexible enough to support
+                different competitive games, including pool, snooker,
+                billiards, chess, table tennis, and darts.
+            </p>
+
+            <p class="highlight">
+                Proposed domain: matchup.games
+                <span class="domain-note">(Availability not verified)</span>
+            </p>
+        </section>
+
+        <section class="plan-section" id="site-purpose">
+            <h2>2. Site Purpose</h2>
+
+            <p>
+                MatchUp is a website prototype designed to help people
+                discover games, find potential opponents, locate places
+                to play, explore coaching opportunities, and learn about
+                competitions.
+            </p>
+
+            <p>
+                The initial focus will be on cue sports such as snooker,
+                pool, and billiards, with the possibility of including
+                chess, table tennis, darts, and other competitive games.
+            </p>
+
+            <p>
+                The prototype will demonstrate how game information,
+                sample player profiles, venues, coaches, competitions,
+                and rankings can be presented. JavaScript and JSON data
+                will support selected dynamic content and interactions.
+            </p>
+        </section>
+
+        <section class="plan-section" id="scenarios">
+            <h2>3. Scenarios</h2>
+
+            <p>
+                These questions represent information needs of people
+                who may use MatchUp.
+            </p>
+
+            <div class="scenario-list">
+                <article class="scenario">
+                    <span class="scenario-number">01</span>
+                    <div>
+                        <h3>Finding an Opponent</h3>
+                        <p>
+                            Where can I find someone nearby who wants to
+                            play pool or snooker at a similar skill level?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="scenario">
+                    <span class="scenario-number">02</span>
+                    <div>
+                        <h3>Finding a Competition</h3>
+                        <p>
+                            What competitions are coming up, and where
+                            can I find their dates, locations, and game
+                            categories?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="scenario">
+                    <span class="scenario-number">03</span>
+                    <div>
+                        <h3>Finding a Venue</h3>
+                        <p>
+                            Where can I find a suitable place to play
+                            my preferred game?
+                        </p>
+                    </div>
+                </article>
+
+                <article class="scenario">
+                    <span class="scenario-number">04</span>
+                    <div>
+                        <h3>Finding a Coach</h3>
+                        <p>
+                            How can I find a coach who can help me improve
+                            my skills in a particular game?
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="color-schema">
+            <h2>4. Color Schema</h2>
+
+            <p>
+                MatchUp will use a modern, sports-inspired color scheme.
+                The selected colors provide contrast and visual hierarchy
+                while keeping the interface clear and easy to navigate.
+            </p>
+
+            <div class="color-grid">
+                <article class="color-card navy">
+                    <div class="color-swatch" aria-hidden="true"></div>
+                    <h3>Deep Navy</h3>
+                    <p class="color-code">#16213E</p>
+                    <p>
+                        Used for the header, main text, navigation,
+                        borders, and major structural elements.
+                    </p>
+                </article>
+
+                <article class="color-card teal">
+                    <div class="color-swatch" aria-hidden="true"></div>
+                    <h3>Teal</h3>
+                    <p class="color-code">#1F7A6D</p>
+                    <p>
+                        Used for section headings, links, buttons,
+                        and interactive accents.
+                    </p>
+                </article>
+
+                <article class="color-card orange">
+                    <div class="color-swatch" aria-hidden="true"></div>
+                    <h3>Orange</h3>
+                    <p class="color-code">#F4A261</p>
+                    <p>
+                        Used for highlights, badges, borders, and
+                        important information.
+                    </p>
+                </article>
+
+                <article class="color-card white">
+                    <div class="color-swatch" aria-hidden="true"></div>
+                    <h3>White</h3>
+                    <p class="color-code">#FFFFFF</p>
+                    <p>
+                        Used for the page background, content sections,
+                        and cards.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="typography">
+            <h2>5. Typography</h2>
+
+            <article class="type-example">
+                <h3>Space Grotesk</h3>
+                <p class="font-sample heading-font">
+                    MatchUp — Games, Players &amp; Competition
+                </p>
+                <p>
+                    Space Grotesk will be used for the site name,
+                    main headings, section headings, and other display
+                    text that needs to stand out.
+                </p>
+            </article>
+
+            <article class="type-example">
+                <h3>Inter</h3>
+                <p class="font-sample body-font">
+                    Find games. Meet players. Compete.
+                </p>
+                <p>
+                    Inter will be used for body text, descriptions,
+                    navigation, labels, and supporting information
+                    because it remains clear and readable at different
+                    screen sizes.
+                </p>
+            </article>
+        </section>
+
+        <section class="plan-section" id="pages">
+            <h2>6. Planned Website Pages</h2>
+
+            <p>
+                The following pages describe the intended structure
+                of the MatchUp prototype.
+            </p>
+
+            <div class="page-grid">
+                <article>
+                    <span class="page-number">01</span>
+                    <h3>Home</h3>
+                    <p>
+                        Introduces MatchUp and provides links to games,
+                        player discovery, venues, coaches, and upcoming
+                        competitions.
+                    </p>
+                </article>
+
+                <article>
+                    <span class="page-number">02</span>
+                    <h3>Games and Players</h3>
+                    <p>
+                        Presents supported games and sample player
+                        or match information to help visitors explore
+                        playing opportunities.
+                    </p>
+                </article>
+
+                <article>
+                    <span class="page-number">03</span>
+                    <h3>Venues and Coaches</h3>
+                    <p>
+                        Presents sample information about places to play
+                        and coaches who can help players develop their
+                        skills.
+                    </p>
+                </article>
+
+                <article>
+                    <span class="page-number">04</span>
+                    <h3>Competitions and Rankings</h3>
+                    <p>
+                        Displays sample upcoming competitions and player
+                        rankings to demonstrate how competitive
+                        information could be organized.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="plan-section" id="features">
+            <h2>7. Planned Features</h2>
+
+            <p>
+                The prototype is intended to demonstrate the following
+                web development features where appropriate:
+            </p>
+
+            <ul class="feature-list">
+                <li>Responsive layouts for mobile and larger screens</li>
+                <li>Semantic HTML and accessible page structure</li>
+                <li>Custom CSS styling</li>
+                <li>Responsive navigation</li>
+                <li>JavaScript DOM manipulation</li>
+                <li>JSON data for selected games and competitions</li>
+                <li>Dynamic content display</li>
+                <li>Forms and user interaction</li>
+                <li>Modal or dialog interactions where appropriate</li>
+                <li>Local browser storage where useful</li>
+            </ul>
+        </section>
+
+        <section class="plan-section" id="wireframe">
+            <h2>8. Home Page Wireframe</h2>
+
+            <p>
+                These black-and-white wireframes will show the proposed
+                structure of the MatchUp home page before detailed
+                colors, imagery, and styling are applied.
+            </p>
+
+            <div class="wireframe-grid">
+                <figure>
+                    <img src="images/siteplan-mobile-wireframe.webp"
+                        alt="Hand-drawn black-and-white wireframe showing the proposed MatchUp mobile home page layout"
+                        loading="lazy" width="360" height="800">
+                    <figcaption>Mobile Home Page Wireframe</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/siteplan-desktop-wireframe.webp"
+                        alt="Hand-drawn black-and-white wireframe showing the proposed MatchUp desktop home page layout"
+                        loading="lazy" width="1200" height="800">
+                    <figcaption>Desktop Home Page Wireframe</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="plan-section" id="future-development">
+            <h2>9. Future Development</h2>
+
+            <p>
+                MatchUp will begin as a small website prototype. The
+                broader concept could eventually support a wider community
+                of players, venues, coaches, clubs, schools, universities,
+                and organizations.
+            </p>
+
+            <p>
+                Possible future features include player accounts,
+                verified match records, matchmaking, venue and coach
+                bookings, leagues, tournaments, school and university
+                competitions, corporate competitions, community
+                championships, inter-city competitions, sponsorships,
+                and standardized competition venues.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>
+                WDD 231 Individual Project Site Plan
+            </p>
+            <p>
+                MatchUp: Games, Players &amp; Competition
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

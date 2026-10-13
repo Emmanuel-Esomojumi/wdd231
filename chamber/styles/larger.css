@@ -1,10 +1,25 @@
 /* =========================================================
-   TABLET / DESKTOP
+   EKO CHAMBER OF COMMERCE
+   larger.css: medium (641px - 1024px) and large (1025px+)
+   Load this after small.css
    ========================================================= */
 
-@media (min-width: 700px) {
+/* =========================================================
+   DISCOVER IMAGE FIX (all sizes)
+   ========================================================= */
 
-  /* ---------- Header ---------- */
+/* I let the aspect ratio set the height, because the height
+   attribute from the JS was locking every image at 200px. */
+.discover-card__image img {
+  height: auto;
+}
+
+/* =========================================================
+   MEDIUM AND UP (641px+)
+   ========================================================= */
+
+@media (min-width: 641px) {
+  /* Header and navigation */
 
   .site-header {
     padding: 1.15rem 2.5rem;
@@ -23,9 +38,6 @@
     display: none;
   }
 
-
-  /* ---------- Navigation ---------- */
-
   .primary-nav {
     max-height: none;
     overflow: visible;
@@ -34,7 +46,6 @@
   .primary-nav ul {
     max-width: var(--max-width);
     margin-inline: auto;
-
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -42,27 +53,20 @@
 
   .primary-nav a {
     position: relative;
-
     padding: 0.85rem 1.5rem;
-
     border-top: none;
   }
 
   .primary-nav a::after {
     content: "";
-
     position: absolute;
     left: 1.5rem;
     right: 1.5rem;
     bottom: 0.35rem;
-
     height: 2px;
-
     background: var(--color-accent);
-
     transform: scaleX(0);
     transform-origin: center;
-
     transition: transform 0.2s ease;
   }
 
@@ -75,13 +79,11 @@
     background: transparent;
   }
 
-  /* ---------- Hero ---------- */
+  /* Hero and page heading */
 
   .hero__content {
     padding: 2.5rem;
   }
-
-  /* ---------- Heading ---------- */
 
   .heading-band {
     padding: 3.25rem 2.5rem 3rem;
@@ -95,16 +97,12 @@
     font-size: 1rem;
   }
 
-
-  /* ---------- Main content ---------- */
-
   main>section,
   main>.panel {
     padding: 3rem 2.5rem;
   }
 
-
-  /* ---------- Directory ---------- */
+  /* Directory */
 
   .directory-list {
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -120,7 +118,7 @@
     padding: 1.45rem 1.4rem 1.5rem;
   }
 
-  /* ---------- Events / Spotlights ---------- */
+  /* Events and spotlights */
 
   .events__grid {
     grid-template-columns: repeat(3, 1fr);
@@ -134,7 +132,7 @@
     align-items: flex-start;
   }
 
-  /* ---------- Join page ---------- */
+  /* Join page */
 
   .join-section {
     padding-top: 3rem;
@@ -147,25 +145,14 @@
     gap: 2.5rem;
   }
 
-  /* Form */
-
   .join-form {
     padding: 2rem;
   }
 
-  /* Form fields */
-
   .form-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 1.2rem;
+    grid-template-columns: minmax(0, 1fr);
     row-gap: 1.25rem;
   }
-
-  .form-field--full {
-    grid-column: 1 / -1;
-  }
-
-  /* Membership cards */
 
   .membership-cards {
     position: sticky;
@@ -195,38 +182,58 @@
     flex: 0 0 auto;
   }
 
-  /* ---------- Footer ---------- */
+  /* Footer */
 
   .site-footer {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-
     padding: 2.75rem 2.5rem;
-
     text-align: left;
   }
 
   .footer__contact address {
     text-align: left;
   }
+
+  .discover-content {
+    padding-top: 2.5rem;
+  }
+
+  .discover-card__body {
+    padding: 1.3rem;
+  }
 }
 
-
 /* =========================================================
-   DESKTOP
+   DISCOVER: MEDIUM LAYOUT (641px - 1024px)
    ========================================================= */
 
-@media (min-width: 1000px) {
+@media (min-width: 641px) and (max-width: 1024px) {
 
+  /* I use two equal columns here, every card keeps the same shape. */
+  .discover-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place2"
+      "place3 place4"
+      "place5 place6"
+      "place7 place8";
+    gap: 1.5rem;
+  }
+}
+
+/* =========================================================
+   LARGE (1025px+)
+   ========================================================= */
+
+@media (min-width: 1025px) {
   .directory-list {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.75rem;
   }
 
   .member-card__logo {
     min-height: 145px;
-    padding: 1.5rem;
   }
 
   .member-card__body {
@@ -242,18 +249,27 @@
   }
 
   .site-footer {
-    padding-inline: max(2.5rem,
-        calc((100% - var(--max-width)) / 2));
+    padding-inline: max(2.5rem, calc((100% - var(--max-width)) / 2));
+  }
+
+  /* Discover large layout: six narrow columns, each card takes two.
+     The "." cells on the last row center the final two cards
+     at the same size as the rest. */
+  .discover-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place1 place2 place2 place3 place3"
+      "place4 place4 place5 place5 place6 place6"
+      ".      place7 place7 place8 place8 .";
+    gap: 1.5rem;
   }
 }
 
-
 /* =========================================================
-   VERY WIDE SCREEN
+   EXTRA LARGE (1200px+)
    ========================================================= */
 
 @media (min-width: 1200px) {
-
   .heading-band {
     padding-top: 3.75rem;
     padding-bottom: 3.5rem;
@@ -265,5 +281,53 @@
 
   .member-card__body {
     padding: 1.6rem 1.6rem 1.65rem;
+  }
+
+  .discover-grid {
+    gap: 1.75rem;
+  }
+}
+
+/* =========================================================
+   IMAGE HOVER (641px and up, never on mobile)
+   ========================================================= */
+
+@media (min-width: 641px) and (prefers-reduced-motion: no-preference) {
+  .discover-card__image img {
+    transition:
+      transform 220ms ease,
+      filter 220ms ease;
+  }
+
+  .discover-card:hover .discover-card__image img {
+    transform: scale(1.04);
+    filter: saturate(1.08);
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .primary-nav a::after {
+    transition: none;
+  }
+}
+
+/* I reserve room for the cards so the footer doesn't jump when they load. */
+.discover-grid {
+  min-height: 3400px;
+}
+
+@media (min-width: 641px) {
+  .discover-grid {
+    min-height: 1900px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .discover-grid {
+    min-height: 1300px;
   }
 }

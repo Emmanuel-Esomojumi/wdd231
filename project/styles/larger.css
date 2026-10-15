@@ -1,0 +1,400 @@
+/* Tablet layouts */
+@media (min-width: 600px) {
+    .container {
+        width: min(100% - 3rem, var(--content-width));
+    }
+
+    .section-space,
+    .featured-section,
+    .games-directory,
+    .competitions-directory,
+    .how-section {
+        padding-block: 4.5rem;
+    }
+
+    .page-hero,
+    .competition-hero {
+        padding-block: 4rem;
+    }
+
+    .games-grid,
+    .competitions-grid,
+    .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .games-controls,
+    .competitions-controls {
+        grid-template-columns: minmax(0, 1fr) minmax(12rem, 0.7fr);
+        align-items: end;
+        padding: 1.25rem;
+    }
+
+    .hero {
+        padding-block: 4.5rem;
+    }
+
+    .hero-content {
+        grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2.7rem, 5vw, 3.6rem);
+    }
+
+    .section-heading {
+        flex-direction: row;
+        align-items: end;
+        justify-content: space-between;
+        gap: 1.5rem;
+    }
+
+    .join-content,
+    .competition-cta__content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .join-content>div,
+    .competition-cta__content>div {
+        flex: 1;
+    }
+
+    .join-layout,
+    .join-content-grid {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .join-form,
+    .form-card,
+    .membership-form {
+        padding: 1.75rem;
+    }
+
+    .membership-options,
+    .membership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Footer: three columns on tablet and desktop.
+       Left = brand and tagline, middle = social icons, right = credits */
+    .footer-content,
+    .footer-inner {
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        justify-items: stretch;
+        align-items: start;
+        gap: 1.5rem;
+        text-align: left;
+    }
+
+    .footer-about {
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .footer-brand {
+        justify-content: flex-start;
+    }
+
+    .footer-about>p {
+        margin: 0.85rem 0 0;
+        text-align: left;
+    }
+
+    .footer-socials {
+        justify-self: center;
+        justify-content: center;
+    }
+
+    .footer-meta {
+        width: auto;
+        justify-self: end;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .site-plan section,
+    .siteplan-content section {
+        padding: 1.75rem;
+    }
+}
+
+/* Desktop navigation and wider layouts */
+@media (min-width: 800px) {
+
+    .header-content,
+    .header-inner {
+        min-height: 5.25rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .primary-nav {
+        position: static;
+        display: flex;
+        max-height: none;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.35rem;
+        overflow: visible;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        opacity: 1;
+        visibility: visible;
+        transition: none;
+    }
+
+    .primary-nav a {
+        display: inline-flex;
+        min-height: 2.75rem;
+        align-items: center;
+        justify-content: center;
+        padding: 0.65rem 0.8rem;
+        border: 0;
+        border-radius: var(--radius-small);
+        font-size: 0.88rem;
+        white-space: nowrap;
+        transition:
+            color 180ms ease,
+            background-color 180ms ease;
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a[aria-current="page"] {
+        background: rgb(255 255 255 / 8%);
+        color: var(--color-accent);
+    }
+
+    .primary-nav .nav-cta {
+        margin-top: 0;
+        margin-left: 0.35rem;
+        padding-inline: 1rem;
+        border: 1px solid var(--color-accent);
+        color: var(--color-accent);
+    }
+
+    .primary-nav .nav-cta:hover {
+        background: var(--color-accent);
+        color: var(--color-primary);
+    }
+
+    .hero {
+        padding-block: 5.5rem;
+    }
+
+    .hero-content {
+        grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+        gap: 4rem;
+    }
+
+    .hero-text h1 {
+        max-width: 13ch;
+        font-size: clamp(3.25rem, 5vw, 4.5rem);
+    }
+
+    .hero-panel {
+        padding: 2rem;
+    }
+
+    .page-hero,
+    .competition-hero {
+        padding-block: 5rem;
+    }
+
+    .page-hero h1,
+    .competition-hero h1 {
+        font-size: clamp(3rem, 4.5vw, 4rem);
+    }
+
+    .competition-hero__content {
+        grid-template-columns: minmax(0, 1.2fr) minmax(15rem, 0.8fr);
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .games-grid,
+    .competitions-grid,
+    .steps-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .game-card,
+    .competition-card,
+    .step-card {
+        padding: 1.5rem;
+    }
+
+    .game-card,
+    .competition-card {
+        transition:
+            transform 180ms ease,
+            box-shadow 180ms ease,
+            border-color 180ms ease;
+    }
+
+    .game-card:hover,
+    .competition-card:hover {
+        transform: translateY(-3px);
+        border-color: rgb(31 122 109 / 45%);
+        box-shadow: 0 10px 26px rgb(22 33 62 / 9%);
+    }
+
+    .featured-section .section-heading {
+        align-items: center;
+    }
+
+    .join-section,
+    .competition-cta {
+        padding-block: 3.5rem;
+    }
+
+    .join-layout,
+    .join-content-grid {
+        gap: 3rem;
+    }
+
+    .membership-options,
+    .membership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Footer columns are set in the tablet block above and carry over here */
+    .footer-content,
+    .footer-inner {
+        gap: 2rem;
+    }
+}
+
+/* Large desktop screens */
+@media (min-width: 1100px) {
+
+    .section-space,
+    .featured-section,
+    .games-directory,
+    .competitions-directory,
+    .how-section {
+        padding-block: 5rem;
+    }
+
+    .hero {
+        padding-block: 6.5rem;
+    }
+
+    .hero-content {
+        gap: 5rem;
+    }
+
+    .games-grid,
+    .competitions-grid,
+    .steps-grid {
+        gap: 1.75rem;
+    }
+
+    .games-controls,
+    .competitions-controls {
+        grid-template-columns: minmax(0, 1fr) minmax(15rem, 0.45fr);
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .join-layout,
+    .join-content-grid {
+        gap: 4rem;
+    }
+
+    .footer-content,
+    .footer-inner {
+        gap: 3rem;
+    }
+}
+
+/* Extra-wide screens */
+@media (min-width: 1400px) {
+    .hero-content {
+        gap: 6rem;
+    }
+
+    .page-hero,
+    .competition-hero {
+        padding-block: 6rem;
+    }
+}
+
+/* Small screens and reduced motion */
+@media (max-width: 360px) {
+    .container {
+        width: calc(100% - 1.25rem);
+    }
+
+    .brand {
+        gap: 0.45rem;
+        font-size: 1.15rem;
+    }
+
+    .brand-mark,
+    .brand__mark {
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .game-card,
+    .competition-card,
+    .step-card {
+        padding: 1rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-actions .button,
+    .hero-actions .button-primary,
+    .hero-actions .button-secondary {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .game-card,
+    .competition-card,
+    .button,
+    .button-primary,
+    .button-secondary,
+    .button-light,
+    .button--primary,
+    .button--secondary {
+        transform: none;
+        transition: none;
+    }
+}
+
+/* Summary rows and dialog facts on wider screens */
+@media (min-width: 600px) {
+    .summary-list div {
+        display: grid;
+        grid-template-columns: 11rem minmax(0, 1fr);
+        gap: 1rem;
+        align-items: baseline;
+    }
+
+    .summary-list dd {
+        margin: 0;
+    }
+
+    .dialog-facts {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}

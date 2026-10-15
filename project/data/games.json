@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "Snooker",
+        "category": "Cue Sports",
+        "players": "2",
+        "level": "All levels",
+        "description": "Plan your shots, control the cue ball, and pot the balls strategically.",
+        "image": "images/snooker.webp"
+    },
+    {
+        "id": 2,
+        "title": "Pool",
+        "category": "Cue Sports",
+        "players": "2",
+        "level": "All levels",
+        "description": "Challenge another player in a popular game of precision and strategy.",
+        "image": "images/pool.webp"
+    },
+    {
+        "id": 3,
+        "title": "Billiards",
+        "category": "Cue Sports",
+        "players": "2",
+        "level": "Beginner friendly",
+        "description": "Develop cue control, positioning, and accuracy through practice.",
+        "image": "images/billiards.webp"
+    },
+    {
+        "id": 4,
+        "title": "Chess",
+        "category": "Board Games",
+        "players": "2",
+        "level": "All levels",
+        "description": "Use planning and tactical thinking to outplay your opponent.",
+        "image": "images/chess.webp"
+    },
+    {
+        "id": 5,
+        "title": "Table Tennis",
+        "category": "Racket Sports",
+        "players": "2 or 4",
+        "level": "All levels",
+        "description": "Test your reflexes, timing, and consistency across the table.",
+        "image": "images/table-tennis.webp"
+    },
+    {
+        "id": 6,
+        "title": "Darts",
+        "category": "Precision Games",
+        "players": "2 or more",
+        "level": "Beginner friendly",
+        "description": "Improve your aim and compete for the highest score.",
+        "image": "images/darts.webp"
+    },
+    {
+        "id": 7,
+        "title": "Badminton",
+        "category": "Racket Sports",
+        "players": "2 or 4",
+        "level": "All levels",
+        "description": "Enjoy fast rallies that demand movement, timing, and control.",
+        "image": "images/badminton.webp"
+    },
+    {
+        "id": 8,
+        "title": "Lawn Tennis",
+        "category": "Racket Sports",
+        "players": "2 or 4",
+        "level": "All levels",
+        "description": "Compete through serves, rallies, and smart court positioning.",
+        "image": "images/lawn-tennis.webp"
+    },
+    {
+        "id": 9,
+        "title": "Basketball",
+        "category": "Team Sports",
+        "players": "2 teams",
+        "level": "All levels",
+        "description": "Build teamwork and scoring skills through an energetic team game.",
+        "image": "images/basketball.webp"
+    },
+    {
+        "id": 10,
+        "title": "Football",
+        "category": "Team Sports",
+        "players": "2 teams",
+        "level": "All levels",
+        "description": "Find teammates and enjoy the world's most widely played team sport.",
+        "image": "images/football.webp"
+    },
+    {
+        "id": 11,
+        "title": "Scrabble",
+        "category": "Board Games",
+        "players": "2 to 4",
+        "level": "Beginner friendly",
+        "description": "Build words, expand your vocabulary, and score points strategically.",
+        "image": "images/scrabble.webp"
+    },
+    {
+        "id": 12,
+        "title": "Ludo",
+        "category": "Board Games",
+        "players": "2 to 4",
+        "level": "Beginner friendly",
+        "description": "Race your pieces home while competing with family and friends.",
+        "image": "images/ludo.webp"
+    },
+    {
+        "id": 13,
+        "title": "Volleyball",
+        "category": "Team Sports",
+        "players": "2 teams",
+        "level": "All levels",
+        "description": "Work together through serves, passes, sets, and attacks.",
+        "image": "images/volleyball.webp"
+    },
+    {
+        "id": 14,
+        "title": "Checkers",
+        "category": "Board Games",
+        "players": "2",
+        "level": "Beginner friendly",
+        "description": "Capture pieces and plan your moves to defeat your opponent.",
+        "image": "images/checkers.webp"
+    },
+    {
+        "id": 15,
+        "title": "Video Games",
+        "category": "Digital Games",
+        "players": "Varies by game",
+        "level": "All levels",
+        "description": "Discover digital games and connect with people who share your interests.",
+        "image": "images/video-games.webp"
+    }
+]

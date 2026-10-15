@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "title": "Lagos Snooker Challenge",
+        "game": "Snooker",
+        "format": "One-on-one",
+        "level": "Intermediate",
+        "location": "Lagos",
+        "description": "A sample snooker challenge focused on accurate potting and tactical play."
+    },
+    {
+        "id": 2,
+        "title": "Pool Skills Showdown",
+        "game": "Pool",
+        "format": "One-on-one",
+        "level": "Beginner",
+        "location": "Lagos",
+        "description": "A sample event for players who want to practise their pool skills."
+    },
+    {
+        "id": 3,
+        "title": "Open Chess Challenge",
+        "game": "Chess",
+        "format": "One-on-one",
+        "level": "All levels",
+        "location": "Online concept",
+        "description": "A sample chess competition built around planning and tactical decisions."
+    },
+    {
+        "id": 4,
+        "title": "Table Tennis Rally Cup",
+        "game": "Table Tennis",
+        "format": "Singles",
+        "level": "Intermediate",
+        "location": "Lagos",
+        "description": "A sample singles competition for players who enjoy fast rallies."
+    },
+    {
+        "id": 5,
+        "title": "Darts Accuracy Contest",
+        "game": "Darts",
+        "format": "Individual",
+        "level": "Beginner",
+        "location": "Lagos",
+        "description": "A sample challenge focused on aiming consistently and scoring points."
+    },
+    {
+        "id": 6,
+        "title": "Community Football Cup",
+        "game": "Football",
+        "format": "Team",
+        "level": "All levels",
+        "location": "Lagos",
+        "description": "A sample team competition highlighting teamwork and fair play."
+    },
+    {
+        "id": 7,
+        "title": "Snooker Precision Series",
+        "game": "Snooker",
+        "format": "One-on-one",
+        "level": "Advanced",
+        "location": "Lagos",
+        "description": "A sample advanced challenge built around positional control and safety play."
+    },
+    {
+        "id": 8,
+        "title": "Pool Friendly League",
+        "game": "Pool",
+        "format": "League",
+        "level": "All levels",
+        "location": "Community concept",
+        "description": "A sample league format for players who want regular friendly matches."
+    },
+    {
+        "id": 9,
+        "title": "Chess Strategy Cup",
+        "game": "Chess",
+        "format": "Tournament",
+        "level": "Intermediate",
+        "location": "Online concept",
+        "description": "A sample tournament concept for players developing their chess strategy."
+    },
+    {
+        "id": 10,
+        "title": "Table Tennis Beginners Challenge",
+        "game": "Table Tennis",
+        "format": "Singles",
+        "level": "Beginner",
+        "location": "Lagos",
+        "description": "A sample event for new players who want to gain match experience."
+    },
+    {
+        "id": 11,
+        "title": "Darts Points League",
+        "game": "Darts",
+        "format": "League",
+        "level": "Intermediate",
+        "location": "Community concept",
+        "description": "A sample league where players can practise accuracy and consistency."
+    },
+    {
+        "id": 12,
+        "title": "Lagos Football Skills Cup",
+        "game": "Football",
+        "format": "Team",
+        "level": "Intermediate",
+        "location": "Lagos",
+        "description": "A sample team event focused on passing, positioning, and coordination."
+    },
+    {
+        "id": 13,
+        "title": "Snooker Rising Players Cup",
+        "game": "Snooker",
+        "format": "One-on-one",
+        "level": "Beginner",
+        "location": "Community concept",
+        "description": "A sample introductory challenge for players learning competitive snooker."
+    },
+    {
+        "id": 14,
+        "title": "Pool Tactical Masters",
+        "game": "Pool",
+        "format": "One-on-one",
+        "level": "Advanced",
+        "location": "Lagos",
+        "description": "A sample advanced pool challenge that rewards tactical shot selection."
+    },
+    {
+        "id": 15,
+        "title": "Open Chess Friendly",
+        "game": "Chess",
+        "format": "Friendly match",
+        "level": "All levels",
+        "location": "Online concept",
+        "description": "A sample friendly match concept for players of different experience levels."
+    }
+]
